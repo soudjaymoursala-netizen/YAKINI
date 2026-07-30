@@ -64,8 +64,11 @@ export type PageContent = {
     h2: string;
     p1: string;
     p2: string;
+    p3: string;
     pharmaIntro: string;
     pharmaList: string;
+    clientsIntro: string;
+    clientsList: string;
     certDoneTitle: string;
     certDoneItems: string[];
     certRoadmapTitle: string;
@@ -439,17 +442,20 @@ export const content: Record<Locale, PageContent> = {
       founderName: "Moursala Soudjay",
       founderRole: "Fondateur",
       terrainLabel: "Secteur",
-      terrainValue: "Industrie pharmaceutique (5 ans et plus) — France, Suisse",
+      terrainValue: "Consultant en industrie pharmaceutique (5 ans et plus) — France, Suisse",
       specialiteLabel: "Spécialité",
       specialiteValue: "Qualification & validation des équipements et systèmes informatisés (CQV/CSV)",
       attacheLabel: "Ancrage",
       attacheValue: "Franco-comorien, né aux Comores",
       eyebrow: "Notre expertise",
       h2: "Une exigence méthodologique héritée d'un secteur où l'approximation n'a pas sa place.",
-      p1: "Yakini est né du parcours professionnel de Moursala Soudjay : plus de cinq ans consacrés à la qualité, à la validation et à l'amélioration continue au sein de l'industrie pharmaceutique, en France puis en Suisse, après une formation à l'Université Claude Bernard Lyon 1. Un secteur où aucun système n'est présumé fonctionnel tant que sa performance n'a pas été démontrée, documentée et vérifiée selon un protocole formel.",
-      p2: "Cette exigence méthodologique se double d'une pratique concrète et continue du digital et de l'intelligence artificielle — conception d'outils d'automatisation et d'applications propriétaires. C'est ce double socle, réglementaire et opérationnel, que Yakini transpose aujourd'hui aux organisations comoriennes.",
+      p1: "Yakini est né du parcours professionnel de Moursala Soudjay : plus de cinq ans en tant que consultant en qualité, validation et amélioration continue au sein de l'industrie pharmaceutique, en France puis en Suisse, après une formation à l'Université Claude Bernard Lyon 1. Un secteur où aucun système n'est présumé fonctionnel tant que sa performance n'a pas été démontrée, documentée et vérifiée selon un protocole formel.",
+      p2: "Sur le terrain, cette expertise s'est construite au contact direct de la production, de la gestion documentaire, de la maintenance, des automaticiens et des chefs de projet — ainsi que des fournisseurs de services intervenant sur ces environnements. Elle inclut la participation à plusieurs audits menés par des autorités réglementaires : FDA, ANSM, Swissmedic.",
+      p3: "Cette exigence méthodologique se double d'une pratique concrète et continue du digital et de l'intelligence artificielle — conception d'outils d'automatisation et d'applications propriétaires. C'est ce double socle, réglementaire et opérationnel, que Yakini transpose aujourd'hui aux organisations comoriennes.",
       pharmaIntro: "Ce que le secteur pharmaceutique impose, par nature :",
       pharmaList: "Qualité · Traçabilité · Reproductibilité · Technologie de pointe · Productivité · Planification · Amélioration continue",
+      clientsIntro: "Structures accompagnées en tant que consultant, notamment :",
+      clientsList: "Sanofi · Becton Dickinson · Curium Pharma · Ferring · Alispharm · Altogen · Techfirm Industrial",
       certDoneTitle: "Certifications acquises",
       certDoneItems: ["Certification Lean Management", "Analyse de données & Power BI", "Pratique des environnements réglementés (CQV/CSV)"],
       certRoadmapTitle: "Feuille de route",
@@ -580,17 +586,20 @@ export const content: Record<Locale, PageContent> = {
       founderName: "Moursala Soudjay",
       founderRole: "Founder",
       terrainLabel: "Sector",
-      terrainValue: "Pharmaceutical industry (5+ years) — France, Switzerland",
+      terrainValue: "Pharmaceutical industry consultant (5+ years) — France, Switzerland",
       specialiteLabel: "Specialty",
       specialiteValue: "Equipment & Computer System Qualification/Validation (CQV/CSV)",
       attacheLabel: "Roots",
       attacheValue: "Franco-Comorian, born in the Comoros",
       eyebrow: "Our expertise",
       h2: "A methodological rigour inherited from a sector where approximation has no place.",
-      p1: "Yakini is rooted in Moursala Soudjay's professional path: over five years devoted to quality, validation and continuous improvement within the pharmaceutical industry, in France and then Switzerland, following his training at Université Claude Bernard Lyon 1. A sector in which no system is presumed functional until its performance has been demonstrated, documented and verified against a formal protocol.",
-      p2: "This methodological rigour is complemented by a sustained, hands-on practice of digital tools and artificial intelligence — the design of proprietary automation tools and applications. It is this dual foundation, regulatory and operational, that Yakini now applies to Comorian organisations.",
+      p1: "Yakini is rooted in Moursala Soudjay's professional path: over five years as a consultant in quality, validation and continuous improvement within the pharmaceutical industry, in France and then Switzerland, following his training at Université Claude Bernard Lyon 1. A sector in which no system is presumed functional until its performance has been demonstrated, documented and verified against a formal protocol.",
+      p2: "In the field, this expertise was built through direct work with production, document management, maintenance, automation engineers and project managers — as well as the service providers operating within these environments. It includes participation in several audits conducted by regulatory authorities: the FDA, ANSM and Swissmedic.",
+      p3: "This methodological rigour is complemented by a sustained, hands-on practice of digital tools and artificial intelligence — the design of proprietary automation tools and applications. It is this dual foundation, regulatory and operational, that Yakini now applies to Comorian organisations.",
       pharmaIntro: "What the pharmaceutical industry demands, by nature:",
       pharmaList: "Quality · Traceability · Reproducibility · Cutting-edge technology · Productivity · Planning · Continuous improvement",
+      clientsIntro: "Organisations worked with as a consultant, among others:",
+      clientsList: "Sanofi · Becton Dickinson · Curium Pharma · Ferring · Alispharm · Altogen · Techfirm Industrial",
       certDoneTitle: "Credentials held",
       certDoneItems: ["Lean Management certification", "Data analysis & Power BI", "Practical experience in regulated environments (CQV/CSV)"],
       certRoadmapTitle: "Development roadmap",

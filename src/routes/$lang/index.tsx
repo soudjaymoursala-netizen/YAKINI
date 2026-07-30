@@ -263,12 +263,20 @@ function Home() {
               <h2 className="mt-3 text-[clamp(24px,3vw,36px)] text-white">{c.expertise.h2}</h2>
               <p className="mt-5 max-w-[62ch] text-[15.5px] text-on-navy-soft">{c.expertise.p1}</p>
               <p className="mt-4 max-w-[62ch] text-[15.5px] text-on-navy-soft">{c.expertise.p2}</p>
+              <p className="mt-4 max-w-[62ch] text-[15.5px] text-on-navy-soft">{c.expertise.p3}</p>
 
               <div className="mt-6 max-w-[62ch] border-l-2 border-bronze-soft py-1 pl-4">
                 <p className="text-[12px] font-medium uppercase tracking-[0.06em] text-on-navy-soft">
                   {c.expertise.pharmaIntro}
                 </p>
                 <p className="mt-1.5 text-[14px] leading-relaxed text-white">{c.expertise.pharmaList}</p>
+              </div>
+
+              <div className="mt-4 max-w-[62ch] border-l-2 border-bronze-soft py-1 pl-4">
+                <p className="text-[12px] font-medium uppercase tracking-[0.06em] text-on-navy-soft">
+                  {c.expertise.clientsIntro}
+                </p>
+                <p className="mt-1.5 text-[14px] leading-relaxed text-white">{c.expertise.clientsList}</p>
               </div>
 
               <div className="mt-10 grid gap-8 sm:grid-cols-2">
