@@ -1,0 +1,249 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * YAKINI — design system
+ * Palette issue de la charte graphique (valeurs hex converties en oklch) :
+ *   navy #0B2545 / navy-deep #071A33 — structure, fonds, titres
+ *   teal #0E6F64 / teal-light #29A392 — interactivité, progression, réussite
+ *   cream #F7F4EE / cream-alt #EFEAE0 — fonds neutres
+ *   bronze #A8783E / bronze-soft #C89A5E — CTA et moments-clés uniquement
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 8px);
+
+  --font-display: var(--font-display-family);
+  --font-sans: var(--font-body-family);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-teal: var(--teal);
+  --color-teal-light: var(--teal-light);
+  --color-cream: var(--cream);
+  --color-cream-alt: var(--cream-alt);
+  --color-bronze: var(--bronze);
+  --color-bronze-soft: var(--bronze-soft);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-on-navy: var(--on-navy);
+  --color-on-navy-soft: var(--on-navy-soft);
+  --color-line: var(--line);
+  --color-line-on-navy: var(--line-on-navy);
+}
+
+:root {
+  --radius: 4px;
+
+  --font-display-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --navy: oklch(0.264 0.068 255.3);
+  --navy-deep: oklch(0.218 0.055 256.1);
+  --teal: oklch(0.488 0.084 182.7);
+  --teal-light: oklch(0.647 0.106 181.2);
+  --cream: oklch(0.968 0.009 84.6);
+  --cream-alt: oklch(0.938 0.014 84.6);
+  --bronze: oklch(0.609 0.096 69.5);
+  --bronze-soft: oklch(0.716 0.095 72.7);
+  --ink: oklch(0.237 0.036 248.1);
+  --ink-soft: oklch(0.482 0.029 246.6);
+  --on-navy: oklch(0.944 0.01 252.8);
+  --on-navy-soft: oklch(0.776 0.028 249.9);
+  --line: oklch(0.237 0.036 248.1 / 10%);
+  --line-on-navy: oklch(0.944 0.01 252.8 / 14%);
+
+  --background: var(--cream);
+  --foreground: var(--ink);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--ink);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--ink);
+  --primary: var(--navy);
+  --primary-foreground: var(--on-navy);
+  --secondary: var(--cream-alt);
+  --secondary-foreground: var(--navy);
+  --muted: var(--cream-alt);
+  --muted-foreground: var(--ink-soft);
+  --accent: var(--bronze);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+  --border: var(--line);
+  --input: var(--line);
+  --ring: var(--teal);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body-family);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display-family);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  /* La nav collante ne doit jamais masquer le titre visé par une ancre */
+  section[id] {
+    scroll-margin-top: 88px;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .wrap {
+    width: 100%;
+    max-width: 1120px;
+    margin-inline: auto;
+    padding-inline: clamp(20px, 5vw, 64px);
+  }
+
+  .eyebrow {
+    display: block;
+    font-family: var(--font-body-family);
+    font-weight: 600;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-navy);
+  }
+
+  .on-navy .eyebrow {
+    color: var(--color-bronze-soft);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: var(--radius);
+    padding: 0.75rem 1.35rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  /* Bronze : CTA et moments-clés uniquement */
+  .btn-bronze {
+    background-color: var(--color-bronze);
+    color: oklch(1 0 0);
+  }
+  .btn-bronze:hover {
+    background-color: var(--color-bronze-soft);
+  }
+
+  .btn-navy {
+    background-color: var(--color-navy);
+    color: var(--color-on-navy);
+  }
+  .btn-navy:hover {
+    background-color: var(--color-navy-deep);
+  }
+
+  .btn-ghost {
+    border: 1px solid var(--color-line-on-navy);
+    color: var(--color-on-navy);
+  }
+  .btn-ghost:hover {
+    border-color: var(--color-bronze-soft);
+    color: var(--color-bronze-soft);
+  }
+
+  .surface {
+    background-color: var(--color-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+  }
+
+  .chip {
+    display: inline-block;
+    border: 1px solid var(--color-line);
+    background-color: var(--color-cream-alt);
+    color: var(--color-ink-soft);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 12.8px;
+    font-weight: 500;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
