@@ -368,12 +368,12 @@ export const content: Record<Locale, PageContent> = {
     },
     nav: {
       links: [
+        { href: "#secteurs", label: "Secteurs" },
         { href: "#origine", label: "Origine" },
         { href: "#methode", label: "Méthodologie" },
         { href: "#solutions", label: "Solutions" },
         { href: "#difference", label: "Différenciation" },
         { href: "#expertise", label: "Expertise" },
-        { href: "#secteurs", label: "Secteurs" },
       ],
       contact: "Nous contacter",
       langLabel: "EN",
@@ -503,12 +503,12 @@ export const content: Record<Locale, PageContent> = {
     },
     nav: {
       links: [
+        { href: "#secteurs", label: "Sectors" },
         { href: "#origine", label: "Origin" },
         { href: "#methode", label: "Methodology" },
         { href: "#solutions", label: "Solutions" },
         { href: "#difference", label: "Differentiation" },
         { href: "#expertise", label: "Expertise" },
-        { href: "#secteurs", label: "Sectors" },
       ],
       contact: "Contact us",
       langLabel: "FR",

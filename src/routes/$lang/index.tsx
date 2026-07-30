@@ -110,8 +110,38 @@ function Home() {
           </div>
         </section>
 
+        {/* SECTEURS */}
+        <section id="secteurs" className="bg-cream-alt py-20 sm:py-24">
+          <div className="wrap">
+            <div className="reveal max-w-[60ch]">
+              <span className="eyebrow">{c.secteurs.eyebrow}</span>
+              <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.secteurs.h2}</h2>
+            </div>
+
+            <div className="reveal mt-10 grid gap-5 md:grid-cols-2">
+              <article className="surface p-7">
+                <span className="eyebrow">{c.secteurs.public.eyebrow}</span>
+                <h3 className="mt-3 text-[19px] text-navy">{c.secteurs.public.h3}</h3>
+                <p className="mt-3 text-[14.5px] text-ink-soft">{c.secteurs.public.p}</p>
+              </article>
+              <article className="surface p-7">
+                <span className="eyebrow">{c.secteurs.prive.eyebrow}</span>
+                <h3 className="mt-3 text-[19px] text-navy">{c.secteurs.prive.h3}</h3>
+                <p className="mt-3 text-[14.5px] text-ink-soft">{c.secteurs.prive.p}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {c.secteurs.prive.chips.map((chip) => (
+                    <span key={chip} className="chip">
+                      {chip}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
         {/* ORIGINE */}
-        <section id="origine" className="reveal bg-cream-alt py-20 sm:py-24">
+        <section id="origine" className="reveal bg-cream py-20 sm:py-24">
           <div className="wrap max-w-[70ch]">
             <span className="eyebrow">{c.apropos.eyebrow}</span>
             <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.apropos.h2}</h2>
@@ -121,7 +151,7 @@ function Home() {
         </section>
 
         {/* MÉTHODE */}
-        <section id="methode" className="bg-cream py-20 sm:py-24">
+        <section id="methode" className="bg-cream-alt py-20 sm:py-24">
           <div className="wrap">
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.methode.eyebrow}</span>
@@ -142,7 +172,7 @@ function Home() {
         </section>
 
         {/* SOLUTIONS */}
-        <section id="solutions" className="bg-cream-alt py-20 sm:py-24">
+        <section id="solutions" className="bg-cream py-20 sm:py-24">
           <div className="wrap">
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.solutionsSection.eyebrow}</span>
@@ -166,7 +196,7 @@ function Home() {
         </section>
 
         {/* DIFFÉRENCE */}
-        <section id="difference" className="bg-cream py-20 sm:py-24">
+        <section id="difference" className="bg-cream-alt py-20 sm:py-24">
           <div className="wrap">
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.difference.eyebrow}</span>
@@ -236,38 +266,8 @@ function Home() {
           </div>
         </section>
 
-        {/* SECTEURS */}
-        <section id="secteurs" className="bg-cream py-20 sm:py-24">
-          <div className="wrap">
-            <div className="reveal max-w-[60ch]">
-              <span className="eyebrow">{c.secteurs.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.secteurs.h2}</h2>
-            </div>
-
-            <div className="reveal mt-10 grid gap-5 md:grid-cols-2">
-              <article className="surface p-7">
-                <span className="eyebrow">{c.secteurs.public.eyebrow}</span>
-                <h3 className="mt-3 text-[19px] text-navy">{c.secteurs.public.h3}</h3>
-                <p className="mt-3 text-[14.5px] text-ink-soft">{c.secteurs.public.p}</p>
-              </article>
-              <article className="surface p-7">
-                <span className="eyebrow">{c.secteurs.prive.eyebrow}</span>
-                <h3 className="mt-3 text-[19px] text-navy">{c.secteurs.prive.h3}</h3>
-                <p className="mt-3 text-[14.5px] text-ink-soft">{c.secteurs.prive.p}</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {c.secteurs.prive.chips.map((chip) => (
-                    <span key={chip} className="chip">
-                      {chip}
-                    </span>
-                  ))}
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
         {/* FAQ */}
-        <section id="questions" className="bg-cream-alt py-20 sm:py-24">
+        <section id="questions" className="bg-cream py-20 sm:py-24">
           <div className="wrap">
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.faq.eyebrow}</span>
