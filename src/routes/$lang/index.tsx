@@ -131,6 +131,9 @@ function Home() {
                     </span>
                   ))}
                 </div>
+                <p className="mt-5 border-l-2 border-bronze py-1 pl-4 text-[13.5px] leading-relaxed text-ink-soft">
+                  {c.secteurs.public.exemple}
+                </p>
               </article>
               <article className="surface p-7">
                 <span className="eyebrow">{c.secteurs.prive.eyebrow}</span>
@@ -143,6 +146,9 @@ function Home() {
                     </span>
                   ))}
                 </div>
+                <p className="mt-5 border-l-2 border-bronze py-1 pl-4 text-[13.5px] leading-relaxed text-ink-soft">
+                  {c.secteurs.prive.exemple}
+                </p>
               </article>
             </div>
           </div>
