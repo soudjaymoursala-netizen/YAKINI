@@ -176,7 +176,7 @@ const solutionsFr: Solution[] = [
     name: "Pérennisation",
     tagline: "Ancrer durablement les résultats obtenus, au-delà du déploiement.",
     objectif:
-      "Passé un premier semestre, le retour aux pratiques antérieures constitue un risque avéré. Nous procédons à une revue des indicateurs, mesurons l'usage réel, accompagnons vos équipes et réengageons la dynamique d'amélioration si nécessaire.",
+      "Sans suivi, le retour aux pratiques antérieures constitue un risque avéré. Nous procédons à une revue des indicateurs, mesurons l'usage réel, accompagnons vos équipes et réengageons la dynamique d'amélioration si nécessaire.",
     pourQui: [
       "Éviter le retour aux pratiques antérieures",
       "Assurer le suivi de vos indicateurs",
@@ -311,7 +311,7 @@ const solutionsEn: Solution[] = [
     name: "Sustain",
     tagline: "Preventing a return to prior practice.",
     objectif:
-      "Beyond an initial six-month period, reversion to former practice constitutes a proven risk. We conduct an indicator review, measure actual usage, support your teams and re-engage the improvement dynamic where required.",
+      "Without follow-up, reversion to former practice constitutes a proven risk. We conduct an indicator review, measure actual usage, support your teams and re-engage the improvement dynamic where required.",
     pourQui: [
       "Avoid reverting to prior practice",
       "Track your performance indicators",
@@ -410,7 +410,7 @@ export const content: Record<Locale, PageContent> = {
         { n: "2", t: "Objectiver", d: "Les délais, les taux d'erreur, les étapes à faible valeur ajoutée : nous quantifions ce qui, jusque-là, relevait de l'impression." },
         { n: "3", t: "Recommander", d: "Une réponse proportionnée à votre organisation et à votre budget — digitale lorsque pertinent, organisationnelle en premier lieu la plupart du temps." },
         { n: "4", t: "Déployer", d: "Avec vos équipes, sur un périmètre pilote, avant toute généralisation." },
-        { n: "5", t: "Pérenniser", d: "Six mois après le déploiement : taux d'adoption réel, gains mesurés, ajustements si nécessaire." },
+        { n: "5", t: "Pérenniser", d: "Après le déploiement : taux d'adoption réel, gains mesurés, ajustements si nécessaire." },
       ],
     },
     solutionsSection: {
@@ -431,7 +431,7 @@ export const content: Record<Locale, PageContent> = {
         { t: "Le transfert de compétences comme condition de sortie", d: "Vos équipes doivent pouvoir opérer en autonomie. La formation des utilisateurs finaux fait partie intégrante de la mission, non d'une prestation facturée séparément." },
         { t: "La responsabilité au-delà de la livraison", d: "La mise en production ne marque pas la fin de notre engagement. Suivi, ajustements, disponibilité : nous demeurons responsables de la solution déployée." },
       ],
-      closing: "Nous ne promettons pas de solution miracle. Nous engageons notre responsabilité dans la durée : la solution doit continuer de fonctionner dans un an.",
+      closing: "Nous ne promettons pas de solution miracle. Nous engageons notre responsabilité dans la durée, bien au-delà de la livraison.",
     },
     expertise: {
       founderName: "Moursala Soudjay",
@@ -549,7 +549,7 @@ export const content: Record<Locale, PageContent> = {
         { n: "2", t: "Quantify", d: "Lead times, error rates, low-value-added steps: we quantify what had, until then, remained a matter of impression." },
         { n: "3", t: "Recommend", d: "A response proportionate to your organisation and your budget — digital where relevant, organisational in the first instance in most cases." },
         { n: "4", t: "Deploy", d: "With your teams, on a pilot scope, prior to any wider rollout." },
-        { n: "5", t: "Sustain", d: "Six months post-deployment: actual adoption rate, measured gains, adjustments where required." },
+        { n: "5", t: "Sustain", d: "Post-deployment: actual adoption rate, measured gains, adjustments where required." },
       ],
     },
     solutionsSection: {
@@ -570,7 +570,7 @@ export const content: Record<Locale, PageContent> = {
         { t: "Knowledge transfer as a condition of exit", d: "Your teams must be able to operate autonomously. Training end users is integral to the mission, not a separately billed service." },
         { t: "Accountability beyond delivery", d: "Go-live does not mark the end of our engagement. Follow-up, adjustments, availability: we remain accountable for the solution deployed." },
       ],
-      closing: "We do not promise a miracle solution. We commit to accountability over time: the solution must still be working a year on.",
+      closing: "We do not promise a miracle solution. We commit to accountability over time, well beyond delivery.",
     },
     expertise: {
       founderName: "Moursala Soudjay",
