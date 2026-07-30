@@ -124,13 +124,9 @@ function Home() {
                 <span className="eyebrow">{c.secteurs.public.eyebrow}</span>
                 <h3 className="mt-3 text-[19px] text-navy">{c.secteurs.public.h3}</h3>
                 <p className="mt-3 text-[14.5px] text-ink-soft">{c.secteurs.public.p}</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {c.secteurs.public.chips.map((chip) => (
-                    <span key={chip} className="chip">
-                      {chip}
-                    </span>
-                  ))}
-                </div>
+                <p className="mt-5 text-[13px] font-medium uppercase tracking-[0.03em] text-bronze">
+                  {c.secteurs.public.chips.join(" · ")}
+                </p>
                 <p className="mt-5 border-l-2 border-bronze py-1 pl-4 text-[13.5px] leading-relaxed text-ink-soft">
                   {c.secteurs.public.exemple}
                 </p>
@@ -139,13 +135,9 @@ function Home() {
                 <span className="eyebrow">{c.secteurs.prive.eyebrow}</span>
                 <h3 className="mt-3 text-[19px] text-navy">{c.secteurs.prive.h3}</h3>
                 <p className="mt-3 text-[14.5px] text-ink-soft">{c.secteurs.prive.p}</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {c.secteurs.prive.chips.map((chip) => (
-                    <span key={chip} className="chip">
-                      {chip}
-                    </span>
-                  ))}
-                </div>
+                <p className="mt-5 text-[13px] font-medium uppercase tracking-[0.03em] text-bronze">
+                  {c.secteurs.prive.chips.join(" · ")}
+                </p>
                 <p className="mt-5 border-l-2 border-bronze py-1 pl-4 text-[13.5px] leading-relaxed text-ink-soft">
                   {c.secteurs.prive.exemple}
                 </p>
