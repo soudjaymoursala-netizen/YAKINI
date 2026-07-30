@@ -390,7 +390,7 @@ export const content: Record<Locale, PageContent> = {
     boussole: {
       eyebrow: "Notre boussole",
       quote:
-        "« Cette solution améliore-t-elle réellement le quotidien de son utilisateur — et sera-t-elle encore utilisée dans six mois ? »",
+        "« Est-ce que ça facilite vraiment la vie de qui s'en sert — assez pour que ça dure ? »",
       caption:
         "Si cette exigence n'est pas satisfaite, nous ne livrons pas — quelle que soit la sophistication technique de la solution.",
     },
@@ -525,7 +525,7 @@ export const content: Record<Locale, PageContent> = {
     boussole: {
       eyebrow: "Our compass",
       quote:
-        "\u201cDoes this solution genuinely improve the daily experience of its user — and will it still be in use in six months?\u201d",
+        "\u201cDoes it genuinely make life easier for the person using it — enough for it to last?\u201d",
       caption:
         "Where this standard is not met, we do not deliver — irrespective of the solution's technical sophistication.",
     },
