@@ -380,12 +380,12 @@ export const content: Record<Locale, PageContent> = {
     },
     hero: {
       eyebrow: "Conseil en excellence opérationnelle, qualité & transformation digitale — Union des Comores",
-      h1: "Fiabiliser ce qui fonctionne mal. Simplifier ce qui doit l'être.",
+      h1: "Fiabiliser ce qui doit l'être. Simplifier ce qui peut l'être.",
       lede:
-        "Files d'attente non maîtrisées, processus documentés de façon incomplète, délais de traitement en dérive, données dispersées : nous conduisons un diagnostic rigoureux pour identifier la cause racine, puis nous la traitons — par le digital lorsqu'il constitue la réponse adaptée, par d'autres leviers lorsque ce n'est pas le cas.",
+        "Files d'attente non maîtrisées, documentation lacunaire, délais de traitement en dérive, données dispersées : nous conduisons un diagnostic rigoureux pour en identifier la cause racine, puis nous la traitons — par le digital lorsqu'il constitue la réponse adaptée, par d'autres leviers lorsque ce n'est pas le cas.",
       ctaPrimary: "Solliciter un premier échange",
       ctaSecondary: "Découvrir notre méthodologie ↓",
-      figcaption: "Vision de la Direction, réalité opérationnelle du terrain",
+      figcaption: "Vision de la Direction, réalité opérationnelle du terrain — une même solution.",
     },
     boussole: {
       eyebrow: "Le critère qui gouverne chacune de nos décisions",
@@ -515,12 +515,12 @@ export const content: Record<Locale, PageContent> = {
     },
     hero: {
       eyebrow: "Operational excellence consulting, quality & digital transformation — Union of the Comoros",
-      h1: "Strengthening what underperforms. Simplifying what is superfluous.",
+      h1: "Reliability, restored. Complexity, removed.",
       lede:
-        "Unmanaged queues, incompletely documented processes, lead times in drift, dispersed data: we conduct a rigorous diagnostic to identify the root cause, then address it — through digital means where they constitute the appropriate response, through other levers where they do not.",
+        "Unmanaged queues, patchy documentation, lead times in drift, dispersed data: we conduct a rigorous diagnostic to identify the root cause, then address it — through digital means where they constitute the appropriate response, through other levers where they do not.",
       ctaPrimary: "Request a diagnostic conversation",
       ctaSecondary: "Discover our methodology ↓",
-      figcaption: "Leadership's perspective, operational reality on the ground",
+      figcaption: "Leadership's perspective, operational reality on the ground — one solution.",
     },
     boussole: {
       eyebrow: "The criterion governing every decision we make",
