@@ -388,11 +388,11 @@ export const content: Record<Locale, PageContent> = {
       figcaption: "Vision de la Direction, réalité opérationnelle du terrain — une même solution.",
     },
     boussole: {
-      eyebrow: "Le critère qui gouverne chacune de nos décisions",
+      eyebrow: "Notre boussole",
       quote:
-        "« Cette solution améliore-t-elle réellement le quotidien de celui qui va s'en servir — et sera-t-elle encore utilisée dans six mois ? »",
+        "« Cette solution améliore-t-elle réellement le quotidien de son utilisateur — et sera-t-elle encore utilisée dans six mois ? »",
       caption:
-        "Si cette exigence n'est pas satisfaite, nous ne procédons pas à la livraison — quelle que soit la sophistication technique de la solution.",
+        "Si cette exigence n'est pas satisfaite, nous ne livrons pas — quelle que soit la sophistication technique de la solution.",
     },
     apropos: {
       eyebrow: "Notre origine",
@@ -523,11 +523,11 @@ export const content: Record<Locale, PageContent> = {
       figcaption: "Leadership's perspective, operational reality on the ground — one solution.",
     },
     boussole: {
-      eyebrow: "The criterion governing every decision we make",
+      eyebrow: "Our compass",
       quote:
-        "\u201cDoes this solution genuinely improve the daily experience of the person who will use it — and will it remain operational in six months?\u201d",
+        "\u201cDoes this solution genuinely improve the daily experience of its user — and will it still be in use in six months?\u201d",
       caption:
-        "Where this standard is not met, delivery does not proceed — irrespective of the solution's technical sophistication.",
+        "Where this standard is not met, we do not deliver — irrespective of the solution's technical sophistication.",
     },
     apropos: {
       eyebrow: "Our origin",
