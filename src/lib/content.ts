@@ -72,6 +72,7 @@ export type PageContent = {
   secteurs: {
     eyebrow: string;
     h2: string;
+    p: string;
     public: { eyebrow: string; h3: string; p: string };
     prive: { eyebrow: string; h3: string; p: string; chips: string[] };
   };
@@ -452,7 +453,8 @@ export const content: Record<Locale, PageContent> = {
     },
     secteurs: {
       eyebrow: "Pour qui",
-      h2: "Quelle que soit votre organisation, les dysfonctionnements se ressemblent.",
+      h2: "Les dysfonctionnements se ressemblent — nos réponses, jamais.",
+      p: "Chaque mission part d'un diagnostic propre à votre organisation, votre budget et votre niveau de maturité — jamais d'un modèle standard appliqué tel quel.",
       public: {
         eyebrow: "Secteur public",
         h3: "Institutions & administrations de l'État comorien",
@@ -587,7 +589,8 @@ export const content: Record<Locale, PageContent> = {
     },
     secteurs: {
       eyebrow: "Who it serves",
-      h2: "Whatever your organisation, the operational friction looks the same.",
+      h2: "The friction looks familiar. Our response never does.",
+      p: "Every engagement starts from a diagnostic specific to your organisation, your budget and your level of maturity — never a standard template applied as-is.",
       public: {
         eyebrow: "Public sector",
         h3: "Institutions & administrations of the Comorian State",

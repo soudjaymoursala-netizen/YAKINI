@@ -116,6 +116,7 @@ function Home() {
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.secteurs.eyebrow}</span>
               <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.secteurs.h2}</h2>
+              <p className="mt-4 text-[16px] text-ink-soft">{c.secteurs.p}</p>
             </div>
 
             <div className="reveal mt-10 grid gap-5 md:grid-cols-2">
