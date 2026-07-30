@@ -30,6 +30,7 @@ export type PageContent = {
     figcaption: string;
   };
   boussole: { eyebrow: string; quote: string; caption: string };
+  apropos: { eyebrow: string; h2: string; p1: string; p2: string };
   methode: {
     eyebrow: string;
     h2: string;
@@ -367,6 +368,7 @@ export const content: Record<Locale, PageContent> = {
     },
     nav: {
       links: [
+        { href: "#origine", label: "Origine" },
         { href: "#methode", label: "Méthodologie" },
         { href: "#solutions", label: "Solutions" },
         { href: "#difference", label: "Différenciation" },
@@ -391,6 +393,12 @@ export const content: Record<Locale, PageContent> = {
         "« Cette solution améliore-t-elle réellement le quotidien de celui qui va s'en servir — et sera-t-elle toujours opérationnelle dans six mois ? »",
       caption:
         "Si cette exigence n'est pas satisfaite, nous ne procédons pas à la livraison — quelle que soit la sophistication technique de la solution.",
+    },
+    apropos: {
+      eyebrow: "Notre origine",
+      h2: "Une conviction transposée, une ambition qui grandit avec chaque mission.",
+      p1: "Yakini est né d'un constat simple : les méthodes qui garantissent la fiabilité des organisations les plus exigeantes — audit rigoureux, systèmes de gestion de la qualité, amélioration continue — n'ont pas d'équivalent structuré aux Comores, alors que les organisations comoriennes affrontent des enjeux de fiabilité opérationnelle tout aussi réels. Ce constat est devenu une conviction, puis une mission : transposer cette exigence méthodologique aux réalités comoriennes, sans jamais perdre de vue les contraintes concrètes de connectivité, de budget et de gouvernance qui définissent le terrain.",
+      p2: "Cette mission porte une trajectoire. À mesure que l'activité se structure, l'ambition de Yakini est de recruter et de former des équipes basées aux Comores, et de s'ouvrir à des partenariats avec des entrepreneurs comoriens — pour que l'expertise développée reste et grandisse sur place, au service d'une transformation durable plutôt que ponctuelle.",
     },
     methode: {
       eyebrow: "Notre méthodologie",
@@ -495,6 +503,7 @@ export const content: Record<Locale, PageContent> = {
     },
     nav: {
       links: [
+        { href: "#origine", label: "Origin" },
         { href: "#methode", label: "Methodology" },
         { href: "#solutions", label: "Solutions" },
         { href: "#difference", label: "Differentiation" },
@@ -519,6 +528,12 @@ export const content: Record<Locale, PageContent> = {
         "\u201cDoes this solution genuinely improve the daily experience of the person who will use it — and will it remain operational in six months?\u201d",
       caption:
         "Where this standard is not met, delivery does not proceed — irrespective of the solution's technical sophistication.",
+    },
+    apropos: {
+      eyebrow: "Our origin",
+      h2: "A conviction transposed, an ambition that grows with every mission.",
+      p1: "Yakini was born from a simple observation: the methods that guarantee reliability within the most demanding organisations — rigorous audit, quality management systems, continuous improvement — have no structured equivalent in the Comoros, even as Comorian organisations face operational reliability challenges that are just as real. That observation became a conviction, then a mission: to transpose this methodological rigour to Comorian realities, without ever losing sight of the concrete constraints of connectivity, budget and governance that define the ground.",
+      p2: "This mission carries a trajectory. As the practice grows, Yakini's ambition is to recruit and train teams based in the Comoros, and to open the structure to partnerships with Comorian entrepreneurs — so that the expertise developed remains and grows locally, in service of durable transformation rather than a one-off intervention.",
     },
     methode: {
       eyebrow: "Our methodology",
