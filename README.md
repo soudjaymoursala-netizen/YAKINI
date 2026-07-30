@@ -1,24 +1,27 @@
-# Project Pulse Check
+# Yakini
 
-voici les documents de projets actuel. j eveux que tu regarde le site et que tu me dise ce que tu en passe
+Site vitrine de Yakini — conseil, transformation digitale & IA aux Comores.
 
-This project was built with [Lovable](https://lovable.dev).
+## Développement local
 
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/b216d6b3-fdbb-424e-9ab5-7207d1ba4bed).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Prérequis : Node.js.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm install
 npm run dev
 ```
+
+## Build de production
+
+```sh
+npm run build
+```
+
+Génère un Cloudflare Worker (`.output/`), déployé automatiquement via l'intégration
+Git de Cloudflare Workers Builds à chaque push sur `main`.
+
+## Structure
+
+- `src/routes/` — pages (routing par fichier, TanStack Router)
+- `src/components/` — composants et contenu du site (nav, footer, catalogue de solutions)
+- `src/styles.css` — design tokens (couleurs, typographie) et styles globaux
