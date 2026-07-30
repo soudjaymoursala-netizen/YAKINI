@@ -64,6 +64,8 @@ export type PageContent = {
     h2: string;
     p1: string;
     p2: string;
+    pharmaIntro: string;
+    pharmaList: string;
     certDoneTitle: string;
     certDoneItems: string[];
     certRoadmapTitle: string;
@@ -437,15 +439,17 @@ export const content: Record<Locale, PageContent> = {
       founderName: "Moursala Soudjay",
       founderRole: "Fondateur",
       terrainLabel: "Secteur",
-      terrainValue: "Industrie pharmaceutique — France, Suisse",
+      terrainValue: "Industrie pharmaceutique (5 ans et plus) — France, Suisse",
       specialiteLabel: "Spécialité",
       specialiteValue: "Qualification & validation des équipements et systèmes informatisés (CQV/CSV)",
       attacheLabel: "Ancrage",
       attacheValue: "Franco-comorien, né aux Comores",
       eyebrow: "Notre expertise",
       h2: "Une exigence méthodologique héritée d'un secteur où l'approximation n'a pas sa place.",
-      p1: "Yakini est né du parcours professionnel de Moursala Soudjay, formé à l'Université Claude Bernard Lyon 1 et consultant depuis plusieurs années en qualification et validation des équipements et systèmes informatisés (CQV/CSV) au sein de l'industrie pharmaceutique, en France puis en Suisse. Dans cet environnement réglementé, aucun système n'est présumé fonctionnel tant que sa performance n'a pas été démontrée, documentée et vérifiée selon un protocole formel.",
+      p1: "Yakini est né du parcours professionnel de Moursala Soudjay : plus de cinq ans consacrés à la qualité, à la validation et à l'amélioration continue au sein de l'industrie pharmaceutique, en France puis en Suisse, après une formation à l'Université Claude Bernard Lyon 1. Un secteur où aucun système n'est présumé fonctionnel tant que sa performance n'a pas été démontrée, documentée et vérifiée selon un protocole formel.",
       p2: "Cette exigence méthodologique se double d'une pratique concrète et continue du digital et de l'intelligence artificielle — conception d'outils d'automatisation et d'applications propriétaires. C'est ce double socle, réglementaire et opérationnel, que Yakini transpose aujourd'hui aux organisations comoriennes.",
+      pharmaIntro: "Ce que le secteur pharmaceutique impose, par nature :",
+      pharmaList: "Qualité · Traçabilité · Reproductibilité · Technologie de pointe · Productivité · Planification · Amélioration continue",
       certDoneTitle: "Certifications acquises",
       certDoneItems: ["Certification Lean Management", "Analyse de données & Power BI", "Pratique des environnements réglementés (CQV/CSV)"],
       certRoadmapTitle: "Feuille de route",
@@ -576,15 +580,17 @@ export const content: Record<Locale, PageContent> = {
       founderName: "Moursala Soudjay",
       founderRole: "Founder",
       terrainLabel: "Sector",
-      terrainValue: "Pharmaceutical industry — France, Switzerland",
+      terrainValue: "Pharmaceutical industry (5+ years) — France, Switzerland",
       specialiteLabel: "Specialty",
       specialiteValue: "Equipment & Computer System Qualification/Validation (CQV/CSV)",
       attacheLabel: "Roots",
       attacheValue: "Franco-Comorian, born in the Comoros",
       eyebrow: "Our expertise",
       h2: "A methodological rigour inherited from a sector where approximation has no place.",
-      p1: "Yakini originates in Moursala Soudjay's professional trajectory: trained at Université Claude Bernard Lyon 1, and for several years a consultant in Equipment and Computer System Qualification and Validation (CQV/CSV) within the pharmaceutical industry, in France and Switzerland. Within that regulated environment, no system is presumed functional until its performance has been demonstrated, documented and verified against a formal protocol.",
+      p1: "Yakini is rooted in Moursala Soudjay's professional path: over five years devoted to quality, validation and continuous improvement within the pharmaceutical industry, in France and then Switzerland, following his training at Université Claude Bernard Lyon 1. A sector in which no system is presumed functional until its performance has been demonstrated, documented and verified against a formal protocol.",
       p2: "This methodological rigour is complemented by a sustained, hands-on practice of digital tools and artificial intelligence — the design of proprietary automation tools and applications. It is this dual foundation, regulatory and operational, that Yakini now applies to Comorian organisations.",
+      pharmaIntro: "What the pharmaceutical industry demands, by nature:",
+      pharmaList: "Quality · Traceability · Reproducibility · Cutting-edge technology · Productivity · Planning · Continuous improvement",
       certDoneTitle: "Credentials held",
       certDoneItems: ["Lean Management certification", "Data analysis & Power BI", "Practical experience in regulated environments (CQV/CSV)"],
       certRoadmapTitle: "Development roadmap",
