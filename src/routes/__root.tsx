@@ -5,12 +5,14 @@ import {
   createRootRouteWithContext,
   useRouter,
   useRouterState,
+  useParams,
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
 import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import { DEFAULT_LOCALE } from "@/lib/content";
 
 function NotFoundComponent() {
   return (
@@ -102,8 +104,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  const params = useParams({ strict: false }) as { lang?: string };
+  const lang = params.lang ?? DEFAULT_LOCALE;
+
   return (
-    <html lang="fr">
+    <html lang={lang}>
       <head>
         <HeadContent />
       </head>
