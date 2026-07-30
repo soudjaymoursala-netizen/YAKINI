@@ -229,18 +229,21 @@ function Home() {
         <section id="expertise" className="on-navy bg-navy-deep py-20 text-on-navy sm:py-24">
           <div className="wrap grid gap-12 md:grid-cols-[0.85fr_1.15fr]">
             <div className="reveal">
-              <div className="border border-line-on-navy p-8">
-                <span
-                  aria-hidden="true"
-                  className="block font-display text-[64px] font-extrabold leading-none tracking-[0.05em] text-transparent"
-                  style={{ WebkitTextStroke: "1px #C89A5E" }}
-                >
-                  MS
-                </span>
-                <p className="mt-6 font-display text-[18px] font-bold text-white">
-                  {c.expertise.founderName}
-                </p>
-                <p className="text-[14px] text-on-navy-soft">{c.expertise.founderRole}</p>
+              <div className="border border-line-on-navy bg-navy p-8">
+                <div className="flex items-center gap-4">
+                  <div
+                    aria-hidden="true"
+                    className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-bronze font-display text-[16px] font-bold tracking-[0.01em] text-navy-deep"
+                  >
+                    MS
+                  </div>
+                  <div>
+                    <p className="font-display text-[18px] font-bold text-white">
+                      {c.expertise.founderName}
+                    </p>
+                    <p className="text-[14px] text-on-navy-soft">{c.expertise.founderRole}</p>
+                  </div>
+                </div>
                 <dl className="mt-8 space-y-4 border-t border-line-on-navy pt-6 text-[14px]">
                   <div>
                     <dt className="text-on-navy-soft">{c.expertise.terrainLabel}</dt>
