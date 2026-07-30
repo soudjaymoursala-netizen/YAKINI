@@ -99,7 +99,7 @@ const solutionsFr: Solution[] = [
     pourQui: [
       "Bénéficier d'un regard externe et objectivé",
       "Préparer une transformation",
-      "Structurer son organisation",
+      "Structurer votre organisation",
     ],
     actions: [
       "Audit des processus sur site (Gemba)",
@@ -111,7 +111,7 @@ const solutionsFr: Solution[] = [
     livrables: [
       "Rapport d'audit",
       "Cartographie des processus",
-      "Analyse des écarts entre la vision de la Direction et la réalité opérationnelle",
+      "Analyse des écarts entre la vision de la Direction et la réalité du terrain",
       "Analyse des causes racines",
       "Priorisation impact/effort et feuille de route",
     ],
@@ -152,7 +152,7 @@ const solutionsFr: Solution[] = [
     pourQui: [
       "Conduire un changement, déployer de nouveaux processus",
       "Digitaliser une activité ciblée",
-      "Moderniser ses modes opératoires",
+      "Moderniser vos modes opératoires",
     ],
     actions: [
       "Gestion de projet et conduite du changement",
@@ -178,8 +178,8 @@ const solutionsFr: Solution[] = [
       "Passé un premier semestre, le retour aux pratiques antérieures constitue un risque avéré. Nous procédons à une revue des indicateurs, mesurons l'usage réel, accompagnons vos équipes et réengageons la dynamique d'amélioration si nécessaire.",
     pourQui: [
       "Éviter le retour aux pratiques antérieures",
-      "Assurer le suivi de ses indicateurs",
-      "Maintenir son niveau de qualité",
+      "Assurer le suivi de vos indicateurs",
+      "Maintenir votre niveau de qualité",
     ],
     actions: [
       "Audits de suivi et revues de performance",
@@ -204,8 +204,8 @@ const solutionsFr: Solution[] = [
       "Pour les organisations ayant déjà consolidé leurs fondamentaux : nous vous conduisons au niveau d'exigence attendu par les référentiels internationaux et les bailleurs de fonds, jusqu'à la préparation d'une certification.",
     pourQui: [
       "Préparer une certification (ISO 9001, par exemple)",
-      "Structurer durablement son système de management",
-      "Renforcer sa crédibilité auprès des bailleurs internationaux (BAD, Banque mondiale, AFD)",
+      "Structurer durablement votre système de management",
+      "Renforcer votre crédibilité auprès des bailleurs internationaux (BAD, Banque mondiale, AFD)",
     ],
     actions: [
       "Préparation aux référentiels internationaux",
@@ -234,7 +234,7 @@ const solutionsEn: Solution[] = [
     pourQui: [
       "Obtain an objectivised, external perspective",
       "Prepare for a transformation",
-      "Structure the organisation",
+      "Structure your organisation",
     ],
     actions: [
       "On-site process audit (Gemba)",
@@ -287,7 +287,7 @@ const solutionsEn: Solution[] = [
     pourQui: [
       "Deliver organisational change, roll out new processes",
       "Digitalise a targeted activity",
-      "Modernise operating methods",
+      "Modernise your operating methods",
     ],
     actions: [
       "Project management and change governance",
@@ -313,8 +313,8 @@ const solutionsEn: Solution[] = [
       "Beyond an initial six-month period, reversion to former practice constitutes a proven risk. We conduct an indicator review, measure actual usage, support your teams and re-engage the improvement dynamic where required.",
     pourQui: [
       "Avoid reverting to prior practice",
-      "Track performance indicators",
-      "Sustain quality standards",
+      "Track your performance indicators",
+      "Sustain your quality standards",
     ],
     actions: [
       "Follow-up audits and performance reviews",
@@ -340,7 +340,7 @@ const solutionsEn: Solution[] = [
     pourQui: [
       "Prepare for certification (ISO 9001, for instance)",
       "Establish a lasting management structure",
-      "Strengthen credibility with international funders (AfDB, World Bank, AFD)",
+      "Strengthen your credibility with international funders (AfDB, World Bank, AFD)",
     ],
     actions: [
       "Preparation against international frameworks",
@@ -390,14 +390,14 @@ export const content: Record<Locale, PageContent> = {
     boussole: {
       eyebrow: "Le critère qui gouverne chacune de nos décisions",
       quote:
-        "« Cette solution améliore-t-elle réellement le quotidien de celui qui va s'en servir — et sera-t-elle toujours opérationnelle dans six mois ? »",
+        "« Cette solution améliore-t-elle réellement le quotidien de celui qui va s'en servir — et sera-t-elle encore utilisée dans six mois ? »",
       caption:
         "Si cette exigence n'est pas satisfaite, nous ne procédons pas à la livraison — quelle que soit la sophistication technique de la solution.",
     },
     apropos: {
       eyebrow: "Notre origine",
       h2: "Une conviction transposée, une ambition qui grandit avec chaque mission.",
-      p1: "Yakini est né d'un constat simple : les méthodes qui garantissent la fiabilité des organisations les plus exigeantes — audit rigoureux, systèmes de gestion de la qualité, amélioration continue — n'ont pas d'équivalent structuré aux Comores, alors que les organisations comoriennes affrontent des enjeux de fiabilité opérationnelle tout aussi réels. Ce constat est devenu une conviction, puis une mission : transposer cette exigence méthodologique aux réalités comoriennes, sans jamais perdre de vue les contraintes concrètes de connectivité, de budget et de gouvernance qui définissent le terrain.",
+      p1: "Yakini est né d'un constat simple : les méthodes qui garantissent la fiabilité des organisations les plus exigeantes — audit rigoureux, systèmes de gestion de la qualité, amélioration continue — n'ont pas d'équivalent structuré aux Comores. Pourtant, les organisations comoriennes affrontent des enjeux de fiabilité opérationnelle tout aussi réels. Ce constat est devenu une conviction, puis une mission : transposer cette exigence méthodologique aux réalités comoriennes, sans jamais perdre de vue les contraintes concrètes de connectivité, de budget et de gouvernance qui définissent le terrain.",
       p2: "Cette mission porte une trajectoire. À mesure que l'activité se structure, l'ambition de Yakini est de recruter et de former des équipes basées aux Comores, et de s'ouvrir à des partenariats avec des entrepreneurs comoriens — pour que l'expertise développée reste et grandisse sur place, au service d'une transformation durable plutôt que ponctuelle.",
     },
     methode: {
@@ -422,7 +422,7 @@ export const content: Record<Locale, PageContent> = {
     solutions: solutionsFr,
     difference: {
       eyebrow: "Notre différenciation",
-      h2: "Notre discipline : décliner une mission plutôt que vendre au-delà du nécessaire.",
+      h2: "Notre discipline : refuser une mission plutôt que vendre au-delà du nécessaire.",
       items: [
         { t: "L'écoute des équipes opérationnelles", d: "Une solution conçue sans ses utilisateurs finaux est, par construction, vouée à l'abandon. Nous les rencontrons hors présence hiérarchique et confrontons leur expérience à la vision de la direction." },
         { t: "L'arbitrage sans conflit d'intérêt", d: "Lorsqu'un enjeu relève de l'organisation plutôt que de la technologie, nous le signalons explicitement — y compris lorsqu'une solution logicielle serait commercialement plus favorable pour nous." },
@@ -452,7 +452,7 @@ export const content: Record<Locale, PageContent> = {
     },
     secteurs: {
       eyebrow: "Pour qui",
-      h2: "Administration publique, PME, grande entreprise : des dysfonctionnements de nature comparable.",
+      h2: "Quelle que soit votre organisation, les dysfonctionnements se ressemblent.",
       public: {
         eyebrow: "Secteur public",
         h3: "Institutions & administrations de l'État comorien",
@@ -479,7 +479,7 @@ export const content: Record<Locale, PageContent> = {
     contact: {
       eyebrow: "Premier échange",
       welcome: "Karibu.",
-      h2: "Partagez-nous votre contexte. Vous recevrez une analyse motivée, sans détour.",
+      h2: "Faites-nous part de votre contexte. Vous recevrez une analyse motivée, sans détour.",
       p: "Quelques lignes suffisent : la nature du frein rencontré, et le résultat recherché. Vous recevrez un avis motivé sur la première action à engager — sans engagement contractuel, y compris si celle-ci ne relève pas d'une mission pour Yakini.",
       ctaEmail: "Contacter Yakini — contact@yakini.km",
       ctaBack: "Revenir en haut",
@@ -532,7 +532,7 @@ export const content: Record<Locale, PageContent> = {
     apropos: {
       eyebrow: "Our origin",
       h2: "A conviction transposed, an ambition that grows with every mission.",
-      p1: "Yakini was born from a simple observation: the methods that guarantee reliability within the most demanding organisations — rigorous audit, quality management systems, continuous improvement — have no structured equivalent in the Comoros, even as Comorian organisations face operational reliability challenges that are just as real. That observation became a conviction, then a mission: to transpose this methodological rigour to Comorian realities, without ever losing sight of the concrete constraints of connectivity, budget and governance that define the ground.",
+      p1: "Yakini was born from a simple observation: the methods that guarantee reliability within the most demanding organisations — rigorous audit, quality management systems, continuous improvement — have no structured equivalent in the Comoros. Yet Comorian organisations face operational reliability challenges that are just as real. That observation became a conviction, then a mission: to transpose this methodological rigour to Comorian realities, without ever losing sight of the concrete constraints of connectivity, budget and governance that define the ground.",
       p2: "This mission carries a trajectory. As the practice grows, Yakini's ambition is to recruit and train teams based in the Comoros, and to open the structure to partnerships with Comorian entrepreneurs — so that the expertise developed remains and grows locally, in service of durable transformation rather than a one-off intervention.",
     },
     methode: {
@@ -587,7 +587,7 @@ export const content: Record<Locale, PageContent> = {
     },
     secteurs: {
       eyebrow: "Who it serves",
-      h2: "Public administration, SME, large enterprise: comparable operational dysfunctions.",
+      h2: "Whatever your organisation, the operational friction looks the same.",
       public: {
         eyebrow: "Public sector",
         h3: "Institutions & administrations of the Comorian State",
