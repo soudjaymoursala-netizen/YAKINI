@@ -1,15 +1,9 @@
 import { useEffect, useState } from "react";
+import type { Locale, PageContent } from "@/lib/content";
 
-const NAV_LINKS = [
-  { href: "#methode", label: "Méthode" },
-  { href: "#solutions", label: "Solutions" },
-  { href: "#difference", label: "Différence" },
-  { href: "#expertise", label: "Expertise" },
-  { href: "#secteurs", label: "Secteurs" },
-];
-
-export function SiteNav() {
+export function SiteNav({ lang, nav }: { lang: Locale; nav: PageContent["nav"] }) {
   const [open, setOpen] = useState(false);
+  const otherLang: Locale = lang === "fr" ? "en" : "fr";
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-cream/85 backdrop-blur-md">
@@ -22,7 +16,7 @@ export function SiteNav() {
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {NAV_LINKS.map((link) => (
+          {nav.links.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -33,9 +27,19 @@ export function SiteNav() {
           ))}
         </nav>
 
-        <a href="#contact" className="btn btn-navy hidden md:inline-flex">
-          Nous contacter
-        </a>
+        <div className="hidden items-center gap-4 md:flex">
+          <a
+            href={`/${otherLang}`}
+            hrefLang={otherLang}
+            aria-label={otherLang === "en" ? "Switch to English" : "Passer en français"}
+            className="text-sm font-semibold text-ink-soft transition-colors hover:text-navy"
+          >
+            {nav.langLabel}
+          </a>
+          <a href="#contact" className="btn btn-navy">
+            {nav.contact}
+          </a>
+        </div>
 
         <button
           type="button"
@@ -53,7 +57,7 @@ export function SiteNav() {
       {open && (
         <div className="border-t border-line bg-cream md:hidden">
           <div className="wrap flex flex-col gap-4 py-5">
-            {NAV_LINKS.map((link) => (
+            {nav.links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -63,8 +67,16 @@ export function SiteNav() {
                 {link.label}
               </a>
             ))}
+            <a
+              href={`/${otherLang}`}
+              hrefLang={otherLang}
+              className="text-base font-medium text-ink"
+              onClick={() => setOpen(false)}
+            >
+              {otherLang === "en" ? "English" : "Français"}
+            </a>
             <a href="#contact" className="btn btn-navy" onClick={() => setOpen(false)}>
-              Nous contacter
+              {nav.contact}
             </a>
           </div>
         </div>
@@ -94,12 +106,15 @@ export function BrandMark({ className }: { className?: string }) {
   );
 }
 
-export function SiteFooter() {
+export function SiteFooter({ footer }: { footer: PageContent["footer"] }) {
   return (
     <footer className="bg-navy-deep py-8 text-[13px] text-on-navy-soft">
-      <div className="wrap flex flex-wrap items-center justify-between gap-3">
-        <span>YAKINI — Rendre simple ce qui complique la vie · Union des Comores</span>
-        <span>© {new Date().getFullYear()}</span>
+      <div className="wrap flex flex-col gap-2">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <span>{footer.tagline}</span>
+          <span>© {new Date().getFullYear()}</span>
+        </div>
+        <p className="text-[12px] italic text-on-navy-soft/80">{footer.brandNote}</p>
       </div>
     </footer>
   );
