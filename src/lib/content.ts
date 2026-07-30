@@ -73,7 +73,7 @@ export type PageContent = {
     eyebrow: string;
     h2: string;
     p: string;
-    public: { eyebrow: string; h3: string; p: string };
+    public: { eyebrow: string; h3: string; p: string; chips: string[] };
     prive: { eyebrow: string; h3: string; p: string; chips: string[] };
   };
   faq: { eyebrow: string; h2: string; items: { q: string; r: string }[] };
@@ -459,10 +459,11 @@ export const content: Record<Locale, PageContent> = {
         eyebrow: "Secteur public",
         h3: "Institutions & administrations de l'État comorien",
         p: "Réduction des files d'attente, dématérialisation ciblée, délais de traitement maîtrisés et communicables aux usagers.",
+        chips: ["Ministères", "Santé publique", "Éducation", "Douanes & finances publiques", "Collectivités locales"],
       },
       prive: {
         eyebrow: "Secteur privé",
-        h3: "Entreprises de toutes tailles",
+        h3: "Entreprises privées, de la PME au grand groupe",
         p: "Réduction du taux d'erreur, gain de temps opérationnel, données fiabilisées au service de la prise de décision.",
         chips: ["Santé", "Commerce", "Tourisme", "Industrie", "Finance", "Transport", "Éducation"],
       },
@@ -595,10 +596,11 @@ export const content: Record<Locale, PageContent> = {
         eyebrow: "Public sector",
         h3: "Institutions & administrations of the Comorian State",
         p: "Reduced queuing times, targeted digitalisation, and processing times that are controlled and can be communicated to the public with confidence.",
+        chips: ["Ministries", "Public health", "Education", "Customs & public finance", "Local government"],
       },
       prive: {
         eyebrow: "Private sector",
-        h3: "Businesses of every size",
+        h3: "Private businesses, from SME to large enterprise",
         p: "Reduced error rates, operational time returned to your teams, and reliable data to support decision-making.",
         chips: ["Healthcare", "Retail", "Tourism", "Industry", "Finance", "Transport", "Education"],
       },

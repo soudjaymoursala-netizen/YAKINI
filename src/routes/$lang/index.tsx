@@ -124,6 +124,13 @@ function Home() {
                 <span className="eyebrow">{c.secteurs.public.eyebrow}</span>
                 <h3 className="mt-3 text-[19px] text-navy">{c.secteurs.public.h3}</h3>
                 <p className="mt-3 text-[14.5px] text-ink-soft">{c.secteurs.public.p}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {c.secteurs.public.chips.map((chip) => (
+                    <span key={chip} className="chip">
+                      {chip}
+                    </span>
+                  ))}
+                </div>
               </article>
               <article className="surface p-7">
                 <span className="eyebrow">{c.secteurs.prive.eyebrow}</span>
