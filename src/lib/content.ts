@@ -91,7 +91,7 @@ const solutionsFr: Solution[] = [
   {
     id: "discover",
     step: "01",
-    name: "Discover",
+    name: "Diagnostic",
     tagline: "Objectiver votre situation réelle, préalablement à tout engagement.",
     objectif:
       "Nous conduisons un diagnostic sans complaisance : ce qui fonctionne, ce qui génère un surcoût, ce qui expose l'organisation à un risque. La direction est consultée, puis les équipes opérationnelles, hors présence hiérarchique — les deux lectures de la réalité sont ensuite confrontées.",
@@ -118,7 +118,7 @@ const solutionsFr: Solution[] = [
   {
     id: "improve",
     step: "02",
-    name: "Improve",
+    name: "Optimisation",
     tagline: "Des processus robustes, y compris en conditions de charge élevée.",
     objectif:
       "Nous repensons vos modes opératoires afin d'éliminer les étapes à non-valeur ajoutée, les erreurs récurrentes et les temps d'attente. La réponse retenue — digitale ou non — est celle qui s'inscrit durablement dans votre réalité opérationnelle, non la plus démonstrative.",
@@ -130,7 +130,7 @@ const solutionsFr: Solution[] = [
     actions: [
       "Optimisation des processus et standardisation",
       "Élaboration de procédures et modes opératoires",
-      "Déploiement d'indicateurs de performance (KPI)",
+      "Déploiement d'indicateurs clés de performance",
       "Gestion des risques opérationnels",
       "Arbitrage transparent : le digital retenu uniquement lorsqu'il constitue la réponse la plus pertinente",
     ],
@@ -144,7 +144,7 @@ const solutionsFr: Solution[] = [
   {
     id: "transform",
     step: "03",
-    name: "Transform",
+    name: "Déploiement",
     tagline: "Du plan d'action à la pratique quotidienne — jusqu'à l'adoption effective.",
     objectif:
       "Nous accompagnons la mise en œuvre jusqu'à ce que le nouveau mode de fonctionnement soit pleinement intégré : pilotage de projet structuré, équipes formées, prototype validé sur site avant toute généralisation.",
@@ -171,8 +171,8 @@ const solutionsFr: Solution[] = [
   {
     id: "sustain",
     step: "04",
-    name: "Sustain",
-    tagline: "Prévenir le retour aux pratiques antérieures.",
+    name: "Pérennisation",
+    tagline: "Ancrer durablement les résultats obtenus, au-delà du déploiement.",
     objectif:
       "Passé un premier semestre, le retour aux pratiques antérieures constitue un risque avéré. Nous procédons à une revue des indicateurs, mesurons l'usage réel, accompagnons vos équipes et réengageons la dynamique d'amélioration si nécessaire.",
     pourQui: [
@@ -182,7 +182,7 @@ const solutionsFr: Solution[] = [
     ],
     actions: [
       "Audits de suivi et revues de performance",
-      "Analyse des KPI, dont le taux d'adoption réelle par les utilisateurs",
+      "Analyse des indicateurs clés de performance, dont le taux d'adoption réelle par les utilisateurs",
       "Coaching des équipes",
       "Plans d'amélioration continue",
     ],
@@ -196,7 +196,7 @@ const solutionsFr: Solution[] = [
   {
     id: "excel",
     step: "★",
-    name: "Excel",
+    name: "Excellence",
     tagline: "Une reconnaissance internationale, étayée par des preuves documentées.",
     premium: true,
     objectif:
@@ -471,7 +471,7 @@ export const content: Record<Locale, PageContent> = {
     contact: {
       eyebrow: "Premier échange",
       welcome: "Karibu.",
-      h2: "Exposez-nous votre contexte. Notre avis vous sera communiqué sans détour.",
+      h2: "Partagez-nous votre contexte. Vous recevrez une analyse motivée, sans détour.",
       p: "Quelques lignes suffisent : la nature du frein rencontré, et le résultat recherché. Vous recevrez un avis motivé sur la première action à engager — sans engagement contractuel, y compris si celle-ci ne relève pas d'une mission pour Yakini.",
       ctaEmail: "Contacter Yakini — contact@yakini.km",
       ctaBack: "Revenir en haut",
