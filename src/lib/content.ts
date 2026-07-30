@@ -441,7 +441,7 @@ export const content: Record<Locale, PageContent> = {
       specialiteValue: "Qualification & validation des équipements et systèmes informatisés (CQV/CSV)",
       attacheLabel: "Ancrage",
       attacheValue: "Franco-comorien, né aux Comores",
-      eyebrow: "Gouvernance & expertise",
+      eyebrow: "Notre expertise",
       h2: "Une exigence méthodologique héritée d'un secteur où l'approximation n'a pas sa place.",
       p1: "Yakini est né du parcours professionnel de Moursala Soudjay, formé à l'Université Claude Bernard Lyon 1 et consultant depuis plusieurs années en qualification et validation des équipements et systèmes informatisés (CQV/CSV) au sein de l'industrie pharmaceutique, en France puis en Suisse. Dans cet environnement réglementé, aucun système n'est présumé fonctionnel tant que sa performance n'a pas été démontrée, documentée et vérifiée selon un protocole formel.",
       p2: "Cette exigence méthodologique se double d'une pratique concrète et continue du digital et de l'intelligence artificielle — conception d'outils d'automatisation et d'applications propriétaires. C'est ce double socle, réglementaire et opérationnel, que Yakini transpose aujourd'hui aux organisations comoriennes.",
@@ -467,7 +467,7 @@ export const content: Record<Locale, PageContent> = {
     },
     faq: {
       eyebrow: "Questions fréquentes",
-      h2: "Les questions préalables les plus fréquemment posées.",
+      h2: "Ce que l'on nous demande avant de s'engager.",
       items: [
         { q: "Comment engager une première prise de contact ?", r: "Par un premier échange, sans engagement contractuel ni facturation. Vous exposez votre contexte ; nous formulons un avis motivé sur la première action pertinente à engager — y compris lorsque celle-ci ne relève pas d'une mission pour Yakini." },
         { q: "L'accompagnement doit-il être engagé dans son intégralité ?", r: "Non. Chaque phase constitue une prestation autonome — un audit isolé ou un périmètre limité à un processus unique sont des points d'entrée valides. La poursuite de l'accompagnement se décide à l'issue de chaque étape." },
@@ -576,7 +576,7 @@ export const content: Record<Locale, PageContent> = {
       specialiteValue: "Equipment & Computer System Qualification/Validation (CQV/CSV)",
       attacheLabel: "Roots",
       attacheValue: "Franco-Comorian, born in the Comoros",
-      eyebrow: "Governance & expertise",
+      eyebrow: "Our expertise",
       h2: "A methodological rigour inherited from a sector where approximation has no place.",
       p1: "Yakini originates in Moursala Soudjay's professional trajectory: trained at Université Claude Bernard Lyon 1, and for several years a consultant in Equipment and Computer System Qualification and Validation (CQV/CSV) within the pharmaceutical industry, in France and Switzerland. Within that regulated environment, no system is presumed functional until its performance has been demonstrated, documented and verified against a formal protocol.",
       p2: "This methodological rigour is complemented by a sustained, hands-on practice of digital tools and artificial intelligence — the design of proprietary automation tools and applications. It is this dual foundation, regulatory and operational, that Yakini now applies to Comorian organisations.",
@@ -602,7 +602,7 @@ export const content: Record<Locale, PageContent> = {
     },
     faq: {
       eyebrow: "Frequently asked questions",
-      h2: "Frequently raised questions, prior to engagement.",
+      h2: "What people ask before they commit.",
       items: [
         { q: "How is an initial engagement structured?", r: "Through an initial conversation, without contractual commitment or invoicing. You describe your context; we provide a substantiated opinion on the first relevant action — including where that action does not constitute a mission for Yakini." },
         { q: "Must the full programme be commissioned at once?", r: "No. Each phase constitutes an autonomous engagement — a standalone audit or a scope limited to a single process are valid entry points. Continuation is determined at the close of each phase." },

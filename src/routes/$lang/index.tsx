@@ -100,6 +100,7 @@ function Home() {
         <section className="reveal bg-cream py-20">
           <div className="wrap text-center">
             <span className="eyebrow">{c.boussole.eyebrow}</span>
+            <h2 className="sr-only">{c.boussole.eyebrow}</h2>
             <blockquote className="mx-auto mt-5 max-w-[24ch] font-display text-[clamp(24px,3.4vw,38px)] leading-[1.2] text-navy sm:max-w-[30ch]">
               {c.boussole.quote}
             </blockquote>
