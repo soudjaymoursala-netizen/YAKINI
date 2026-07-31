@@ -167,6 +167,7 @@ function Home() {
             <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.apropos.h2}</h2>
             <p className="mt-5 text-[16px] leading-relaxed text-ink-soft">{c.apropos.p1}</p>
             <p className="mt-4 text-[16px] leading-relaxed text-ink-soft">{c.apropos.p2}</p>
+            <p className="mt-4 text-[16px] leading-relaxed text-ink-soft">{c.apropos.p3}</p>
           </div>
         </section>
 

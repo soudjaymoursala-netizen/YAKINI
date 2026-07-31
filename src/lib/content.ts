@@ -31,7 +31,7 @@ export type PageContent = {
     figcaption: string;
   };
   boussole: { eyebrow: string; quote: string; caption: string };
-  apropos: { eyebrow: string; h2: string; p1: string; p2: string };
+  apropos: { eyebrow: string; h2: string; p1: string; p2: string; p3: string };
   methode: {
     eyebrow: string;
     h2: string;
@@ -447,6 +447,7 @@ export const content: Record<Locale, PageContent> = {
       h2: "Une conviction transposée, une ambition qui grandit avec chaque mission.",
       p1: "Yakini est né d'un constat simple : les méthodes qui garantissent la fiabilité des organisations les plus exigeantes — audit rigoureux, systèmes de gestion de la qualité, amélioration continue — n'ont pas d'équivalent structuré aux Comores. Pourtant, les organisations comoriennes affrontent des enjeux de fiabilité opérationnelle tout aussi réels. Ce constat est devenu une conviction, puis une mission : transposer cette exigence méthodologique aux réalités comoriennes, sans jamais perdre de vue les contraintes concrètes de connectivité, de budget et de gouvernance qui définissent le terrain.",
       p2: "Cette mission porte une trajectoire. À mesure que l'activité se structure, l'ambition de Yakini est de recruter et de former des équipes basées aux Comores, et de s'ouvrir à des partenariats avec des entrepreneurs comoriens — pour que l'expertise développée reste et grandisse sur place, au service d'une transformation durable plutôt que ponctuelle.",
+      p3: "De l'audit à la mise en œuvre, Yakini couvre l'ensemble de la chaîne de transformation — conseil, audit et gestion des risques, solutions digitales et intelligence artificielle, formation, suivi de la performance — pour des résultats mesurables, ancrés dans le quotidien de chaque organisation comorienne.",
     },
     methode: {
       eyebrow: "Notre méthodologie",
@@ -594,6 +595,7 @@ export const content: Record<Locale, PageContent> = {
       h2: "A conviction transposed, an ambition that grows with every mission.",
       p1: "Yakini was born from a simple observation: the methods that guarantee reliability within the most demanding organisations — rigorous audit, quality management systems, continuous improvement — have no structured equivalent in the Comoros. Yet Comorian organisations face operational reliability challenges that are just as real. That observation became a conviction, then a mission: to transpose this methodological rigour to Comorian realities, without ever losing sight of the concrete constraints of connectivity, budget and governance that define the ground.",
       p2: "This mission carries a trajectory. As the practice grows, Yakini's ambition is to recruit and train teams based in the Comoros, and to open the structure to partnerships with Comorian entrepreneurs — so that the expertise developed remains and grows locally, in service of durable transformation rather than a one-off intervention.",
+      p3: "From audit to implementation, Yakini covers the full transformation chain — advisory, audit and risk management, digital and AI solutions, training, performance follow-up — for measurable results, grounded in the daily reality of every Comorian organisation.",
     },
     methode: {
       eyebrow: "Our methodology",
