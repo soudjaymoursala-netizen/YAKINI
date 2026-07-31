@@ -452,7 +452,7 @@ export const content: Record<Locale, PageContent> = {
     methode: {
       eyebrow: "Notre méthodologie",
       h2: "Cinq phases. Aucune décision imposée sans concertation préalable.",
-      p: "La direction et les équipes opérationnelles sont consultées séparément, en amont de toute recommandation. C'est ce qui distingue une solution durablement adoptée d'un outil abandonné après quelques semaines.",
+      p: "Nous mobilisons la direction et les équipes opérationnelles séparément, en amont de toute recommandation — la condition d'une transformation durablement adoptée, plutôt que d'un outil abandonné après quelques semaines.",
       etapes: [
         { n: "1", t: "Recueillir", d: "La vision de la direction, puis celle des équipes opérationnelles — recueillies de façon indépendante. Chaque lecture du réel fait foi." },
         { n: "2", t: "Objectiver", d: "Les délais, les taux d'erreur, les étapes à faible valeur ajoutée : nous quantifions ce qui, jusque-là, relevait de l'impression." },
@@ -464,7 +464,7 @@ export const content: Record<Locale, PageContent> = {
     solutionsSection: {
       eyebrow: "Notre offre",
       h2: "Mobilisez la phase dont vous avez besoin — pas l'intégralité du dispositif.",
-      p: "Six niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale. Chaque niveau constitue une prestation autonome. Consultez celui qui correspond à votre besoin pour en connaître le périmètre exact.",
+      p: "Six niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale — chacun conçu pour produire un résultat mesurable. Chaque niveau constitue une prestation autonome ; consultez celui qui correspond à votre besoin pour en connaître le périmètre exact.",
       hesitant: "Une hésitation sur le point d'entrée ? Le module Conseils propose un avis motivé, sans engagement contractuel.",
       labels: { pourQui: "Pour qui", actions: "Prestations réalisées", livrables: "Livrables", premium: "Niveau premium" },
     },
@@ -600,7 +600,7 @@ export const content: Record<Locale, PageContent> = {
     methode: {
       eyebrow: "Our methodology",
       h2: "Five phases. No decision imposed without prior consultation.",
-      p: "Leadership and operational teams are consulted independently, ahead of any recommendation. This is what distinguishes a solution that is durably adopted from a tool abandoned within weeks.",
+      p: "We engage leadership and operational teams independently, ahead of any recommendation — the condition for a transformation that is durably adopted, rather than a tool abandoned within weeks.",
       etapes: [
         { n: "1", t: "Gather", d: "Leadership's perspective, then that of operational teams — gathered independently. Both readings of reality are given full weight." },
         { n: "2", t: "Quantify", d: "Lead times, error rates, low-value-added steps: we quantify what had, until then, remained a matter of impression." },
@@ -612,7 +612,7 @@ export const content: Record<Locale, PageContent> = {
     solutionsSection: {
       eyebrow: "Our offering",
       h2: "Engage the phase you require — not the entire programme.",
-      p: "Six levels of intervention, from initial diagnostic to preparation for international certification. Each level constitutes an autonomous engagement. Consult the one relevant to your needs for its precise scope.",
+      p: "Six levels of intervention, from initial diagnostic to preparation for international certification — each designed to produce a measurable outcome. Each level constitutes an autonomous engagement; consult the one relevant to your needs for its precise scope.",
       hesitant: "Uncertain where to begin? Conseils provides a substantiated opinion, without contractual commitment.",
       labels: { pourQui: "Who it serves", actions: "Services delivered", livrables: "Deliverables", premium: "Premium tier" },
     },
