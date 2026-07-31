@@ -25,6 +25,7 @@ export default defineConfig(async ({ command }) => {
     plugins.push(
       nitro({
         preset: "cloudflare-module",
+        cloudflare: { wrangler: { name: "yakini" } },
         routeRules: {
           "/**": {
             headers: {
