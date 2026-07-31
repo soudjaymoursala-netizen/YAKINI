@@ -416,7 +416,7 @@ export const content: Record<Locale, PageContent> = {
     nav: {
       links: [
         { href: "#secteurs", label: "Secteurs" },
-        { href: "#origine", label: "Origine" },
+        { href: "#origine", label: "À propos" },
         { href: "#methode", label: "Méthodologie" },
         { href: "#solutions", label: "Solutions" },
         { href: "#difference", label: "Pourquoi nous" },
@@ -443,7 +443,7 @@ export const content: Record<Locale, PageContent> = {
         "Si cette exigence n'est pas satisfaite, nous ne livrons pas — quelle que soit la sophistication technique de la solution.",
     },
     apropos: {
-      eyebrow: "Notre origine",
+      eyebrow: "À propos",
       h2: "Une conviction transposée, une ambition qui grandit avec chaque mission.",
       p1: "Nous sommes partis d'un constat simple : les méthodes qui garantissent la fiabilité des organisations les plus exigeantes — audit rigoureux, systèmes de gestion de la qualité, amélioration continue — n'ont pas d'équivalent structuré aux Comores. Pourtant, les organisations comoriennes affrontent des enjeux de fiabilité opérationnelle tout aussi réels. Ce constat est devenu une conviction, puis une mission : réinventer la manière dont les organisations comoriennes accèdent à cette exigence méthodologique, sans jamais perdre de vue les contraintes concrètes de connectivité, de budget et de gouvernance qui définissent le terrain.",
       p2: "Cette mission porte une trajectoire. À mesure que notre activité se structure, notre ambition est de recruter et de former des équipes basées aux Comores, et de nous ouvrir à des partenariats avec des entrepreneurs comoriens — pour que l'expertise développée reste et grandisse sur place, au service d'une transformation durable plutôt que ponctuelle.",
@@ -564,7 +564,7 @@ export const content: Record<Locale, PageContent> = {
     nav: {
       links: [
         { href: "#secteurs", label: "Sectors" },
-        { href: "#origine", label: "Origin" },
+        { href: "#origine", label: "About" },
         { href: "#methode", label: "Methodology" },
         { href: "#solutions", label: "Solutions" },
         { href: "#difference", label: "Why us" },
@@ -591,7 +591,7 @@ export const content: Record<Locale, PageContent> = {
         "Where this standard is not met, we do not deliver — irrespective of the solution's technical sophistication.",
     },
     apropos: {
-      eyebrow: "Our origin",
+      eyebrow: "About",
       h2: "A conviction transposed, an ambition that grows with every mission.",
       p1: "We started from a simple observation: the methods that guarantee reliability within the most demanding organisations — rigorous audit, quality management systems, continuous improvement — have no structured equivalent in the Comoros. Yet Comorian organisations face operational reliability challenges that are just as real. That observation became a conviction, then a mission: to reinvent how Comorian organisations access this methodological rigour, without ever losing sight of the concrete constraints of connectivity, budget and governance that define the ground.",
       p2: "This mission carries a trajectory. As our practice grows, our ambition is to recruit and train teams based in the Comoros, and to open our structure to partnerships with Comorian entrepreneurs — so that the expertise developed remains and grows locally, in service of durable transformation rather than a one-off intervention.",
