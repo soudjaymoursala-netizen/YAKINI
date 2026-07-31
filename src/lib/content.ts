@@ -445,16 +445,16 @@ export const content: Record<Locale, PageContent> = {
     apropos: {
       eyebrow: "Notre origine",
       h2: "Une conviction transposée, une ambition qui grandit avec chaque mission.",
-      p1: "Yakini est né d'un constat simple : les méthodes qui garantissent la fiabilité des organisations les plus exigeantes — audit rigoureux, systèmes de gestion de la qualité, amélioration continue — n'ont pas d'équivalent structuré aux Comores. Pourtant, les organisations comoriennes affrontent des enjeux de fiabilité opérationnelle tout aussi réels. Ce constat est devenu une conviction, puis une mission : transposer cette exigence méthodologique aux réalités comoriennes, sans jamais perdre de vue les contraintes concrètes de connectivité, de budget et de gouvernance qui définissent le terrain.",
+      p1: "Yakini est né d'un constat simple : les méthodes qui garantissent la fiabilité des organisations les plus exigeantes — audit rigoureux, systèmes de gestion de la qualité, amélioration continue — n'ont pas d'équivalent structuré aux Comores. Pourtant, les organisations comoriennes affrontent des enjeux de fiabilité opérationnelle tout aussi réels. Ce constat est devenu une conviction, puis une mission : réinventer la manière dont les organisations comoriennes accèdent à cette exigence méthodologique, sans jamais perdre de vue les contraintes concrètes de connectivité, de budget et de gouvernance qui définissent le terrain.",
       p2: "Cette mission porte une trajectoire. À mesure que l'activité se structure, l'ambition de Yakini est de recruter et de former des équipes basées aux Comores, et de s'ouvrir à des partenariats avec des entrepreneurs comoriens — pour que l'expertise développée reste et grandisse sur place, au service d'une transformation durable plutôt que ponctuelle.",
-      p3: "De l'audit à la mise en œuvre, Yakini couvre l'ensemble de la chaîne de transformation — conseil, audit et gestion des risques, solutions digitales et intelligence artificielle, formation, suivi de la performance — pour des résultats mesurables, ancrés dans le quotidien de chaque organisation comorienne.",
+      p3: "De l'audit à la mise en œuvre, Yakini couvre l'ensemble de la chaîne de transformation — conseil, audit et gestion des risques, solutions digitales et intelligence artificielle, formation, suivi de la performance — au service d'une création de valeur mesurable, ancrée dans le quotidien de chaque organisation comorienne.",
     },
     methode: {
       eyebrow: "Notre méthodologie",
       h2: "Cinq phases. Aucune décision imposée sans concertation préalable.",
       p: "Nous mobilisons la direction et les équipes opérationnelles séparément, en amont de toute recommandation — la condition d'une transformation durablement adoptée, plutôt que d'un outil abandonné après quelques semaines.",
       etapes: [
-        { n: "1", t: "Recueillir", d: "La vision de la direction, puis celle des équipes opérationnelles — recueillies de façon indépendante. Chaque lecture du réel fait foi." },
+        { n: "1", t: "Recueillir", d: "La vision des dirigeants, puis celle des équipes opérationnelles — recueillies de façon indépendante. Chaque lecture du réel fait foi." },
         { n: "2", t: "Objectiver", d: "Les délais, les taux d'erreur, les étapes à faible valeur ajoutée : nous quantifions ce qui, jusque-là, relevait de l'impression." },
         { n: "3", t: "Recommander", d: "Une réponse proportionnée à votre organisation et à votre budget — digitale lorsque pertinent, organisationnelle en premier lieu la plupart du temps." },
         { n: "4", t: "Déployer", d: "Avec vos équipes, sur un périmètre pilote, avant toute généralisation." },
@@ -464,7 +464,7 @@ export const content: Record<Locale, PageContent> = {
     solutionsSection: {
       eyebrow: "Notre offre",
       h2: "Mobilisez la phase dont vous avez besoin — pas l'intégralité du dispositif.",
-      p: "Six niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale — chacun conçu pour produire un résultat mesurable. Chaque niveau constitue une prestation autonome ; consultez celui qui correspond à votre besoin pour en connaître le périmètre exact.",
+      p: "Six niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale — chacun conçu pour générer un impact mesurable. Chaque niveau constitue une prestation autonome ; consultez celui qui correspond à votre besoin pour en connaître le périmètre exact.",
       hesitant: "Une hésitation sur le point d'entrée ? Le module Conseils propose un avis motivé, sans engagement contractuel.",
       labels: { pourQui: "Pour qui", actions: "Prestations réalisées", livrables: "Livrables", premium: "Niveau premium" },
     },
@@ -593,16 +593,16 @@ export const content: Record<Locale, PageContent> = {
     apropos: {
       eyebrow: "Our origin",
       h2: "A conviction transposed, an ambition that grows with every mission.",
-      p1: "Yakini was born from a simple observation: the methods that guarantee reliability within the most demanding organisations — rigorous audit, quality management systems, continuous improvement — have no structured equivalent in the Comoros. Yet Comorian organisations face operational reliability challenges that are just as real. That observation became a conviction, then a mission: to transpose this methodological rigour to Comorian realities, without ever losing sight of the concrete constraints of connectivity, budget and governance that define the ground.",
+      p1: "Yakini was born from a simple observation: the methods that guarantee reliability within the most demanding organisations — rigorous audit, quality management systems, continuous improvement — have no structured equivalent in the Comoros. Yet Comorian organisations face operational reliability challenges that are just as real. That observation became a conviction, then a mission: to reinvent how Comorian organisations access this methodological rigour, without ever losing sight of the concrete constraints of connectivity, budget and governance that define the ground.",
       p2: "This mission carries a trajectory. As the practice grows, Yakini's ambition is to recruit and train teams based in the Comoros, and to open the structure to partnerships with Comorian entrepreneurs — so that the expertise developed remains and grows locally, in service of durable transformation rather than a one-off intervention.",
-      p3: "From audit to implementation, Yakini covers the full transformation chain — advisory, audit and risk management, digital and AI solutions, training, performance follow-up — for measurable results, grounded in the daily reality of every Comorian organisation.",
+      p3: "From audit to implementation, Yakini covers the full transformation chain — advisory, audit and risk management, digital and AI solutions, training, performance follow-up — in service of measurable value creation, grounded in the daily reality of every Comorian organisation.",
     },
     methode: {
       eyebrow: "Our methodology",
       h2: "Five phases. No decision imposed without prior consultation.",
       p: "We engage leadership and operational teams independently, ahead of any recommendation — the condition for a transformation that is durably adopted, rather than a tool abandoned within weeks.",
       etapes: [
-        { n: "1", t: "Gather", d: "Leadership's perspective, then that of operational teams — gathered independently. Both readings of reality are given full weight." },
+        { n: "1", t: "Gather", d: "Leaders' perspective, then that of operational teams — gathered independently. Both readings of reality are given full weight." },
         { n: "2", t: "Quantify", d: "Lead times, error rates, low-value-added steps: we quantify what had, until then, remained a matter of impression." },
         { n: "3", t: "Recommend", d: "A response proportionate to your organisation and your budget — digital where relevant, organisational in the first instance in most cases." },
         { n: "4", t: "Deploy", d: "With your teams, on a pilot scope, prior to any wider rollout." },
@@ -612,7 +612,7 @@ export const content: Record<Locale, PageContent> = {
     solutionsSection: {
       eyebrow: "Our offering",
       h2: "Engage the phase you require — not the entire programme.",
-      p: "Six levels of intervention, from initial diagnostic to preparation for international certification — each designed to produce a measurable outcome. Each level constitutes an autonomous engagement; consult the one relevant to your needs for its precise scope.",
+      p: "Six levels of intervention, from initial diagnostic to preparation for international certification — each designed to generate measurable impact. Each level constitutes an autonomous engagement; consult the one relevant to your needs for its precise scope.",
       hesitant: "Uncertain where to begin? Conseils provides a substantiated opinion, without contractual commitment.",
       labels: { pourQui: "Who it serves", actions: "Services delivered", livrables: "Deliverables", premium: "Premium tier" },
     },
