@@ -32,12 +32,6 @@ export type PageContent = {
   };
   boussole: { eyebrow: string; quote: string; caption: string };
   apropos: { eyebrow: string; h2: string; p1: string; p2: string; p3: string };
-  methode: {
-    eyebrow: string;
-    h2: string;
-    p: string;
-    etapes: { n: string; t: string; d: string }[];
-  };
   solutionsSection: {
     eyebrow: string;
     h2: string;
@@ -417,7 +411,6 @@ export const content: Record<Locale, PageContent> = {
       links: [
         { href: "#secteurs", label: "Secteurs" },
         { href: "#origine", label: "À propos" },
-        { href: "#methode", label: "Méthodologie" },
         { href: "#solutions", label: "Solutions" },
         { href: "#difference", label: "Pourquoi nous" },
         { href: "#expertise", label: "Expertise" },
@@ -449,22 +442,10 @@ export const content: Record<Locale, PageContent> = {
       p2: "Cette mission porte une trajectoire. À mesure que notre activité se structure, notre ambition est de recruter et de former des équipes basées aux Comores, et de nous ouvrir à des partenariats avec des entrepreneurs comoriens — pour que l'expertise développée reste et grandisse sur place, au service d'une transformation durable plutôt que ponctuelle.",
       p3: "De l'audit à la mise en œuvre, nous couvrons l'ensemble de la chaîne de transformation — conseil, audit et gestion des risques, solutions digitales et intelligence artificielle, formation, suivi de la performance — au service d'une création de valeur mesurable, ancrée dans le quotidien de chaque organisation comorienne.",
     },
-    methode: {
-      eyebrow: "Notre méthodologie",
-      h2: "Cinq phases. Aucune décision imposée sans concertation préalable.",
-      p: "Nous mobilisons la direction et les équipes opérationnelles séparément, en amont de toute recommandation — la condition d'une transformation durablement adoptée, plutôt que d'un outil abandonné après quelques semaines.",
-      etapes: [
-        { n: "1", t: "Recueillir", d: "La vision des dirigeants, puis celle des équipes opérationnelles — recueillies de façon indépendante. Chaque lecture du réel fait foi." },
-        { n: "2", t: "Objectiver", d: "Les délais, les taux d'erreur, les étapes à faible valeur ajoutée : nous quantifions ce qui, jusque-là, relevait de l'impression." },
-        { n: "3", t: "Recommander", d: "Une réponse proportionnée à votre organisation et à votre budget — digitale lorsque pertinent, organisationnelle en premier lieu la plupart du temps." },
-        { n: "4", t: "Déployer", d: "Avec vos équipes, sur un périmètre pilote, avant toute généralisation." },
-        { n: "5", t: "Pérenniser", d: "Après le déploiement : taux d'adoption réel, gains mesurés, ajustements si nécessaire." },
-      ],
-    },
     solutionsSection: {
-      eyebrow: "Notre offre",
-      h2: "Mobilisez la phase dont vous avez besoin — pas l'intégralité du dispositif.",
-      p: "Six niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale — chacun conçu pour générer un impact mesurable. Chaque niveau constitue une prestation autonome ; consultez celui qui correspond à votre besoin pour en connaître le périmètre exact.",
+      eyebrow: "Notre méthodologie",
+      h2: "Mobilisez le niveau dont vous avez besoin — jamais sans concertation préalable.",
+      p: "Nous mobilisons la direction et les équipes opérationnelles séparément, en amont de toute recommandation — la condition d'une transformation durablement adoptée, plutôt que d'un outil abandonné après quelques semaines. Cette méthode se décline en six niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale : chacun conçu pour générer un impact mesurable, et mobilisable comme une prestation autonome.",
       hesitant: "Une hésitation sur le point d'entrée ? Le module Conseils propose un avis motivé, sans engagement contractuel.",
       labels: { pourQui: "Pour qui", actions: "Prestations réalisées", livrables: "Livrables", premium: "Niveau premium" },
     },
@@ -565,7 +546,6 @@ export const content: Record<Locale, PageContent> = {
       links: [
         { href: "#secteurs", label: "Sectors" },
         { href: "#origine", label: "About" },
-        { href: "#methode", label: "Methodology" },
         { href: "#solutions", label: "Solutions" },
         { href: "#difference", label: "Why us" },
         { href: "#expertise", label: "Expertise" },
@@ -597,22 +577,10 @@ export const content: Record<Locale, PageContent> = {
       p2: "This mission carries a trajectory. As our practice grows, our ambition is to recruit and train teams based in the Comoros, and to open our structure to partnerships with Comorian entrepreneurs — so that the expertise developed remains and grows locally, in service of durable transformation rather than a one-off intervention.",
       p3: "From audit to implementation, we cover the full transformation chain — advisory, audit and risk management, digital and AI solutions, training, performance follow-up — in service of measurable value creation, grounded in the daily reality of every Comorian organisation.",
     },
-    methode: {
-      eyebrow: "Our methodology",
-      h2: "Five phases. No decision imposed without prior consultation.",
-      p: "We engage leadership and operational teams independently, ahead of any recommendation — the condition for a transformation that is durably adopted, rather than a tool abandoned within weeks.",
-      etapes: [
-        { n: "1", t: "Gather", d: "Leaders' perspective, then that of operational teams — gathered independently. Both readings of reality are given full weight." },
-        { n: "2", t: "Quantify", d: "Lead times, error rates, low-value-added steps: we quantify what had, until then, remained a matter of impression." },
-        { n: "3", t: "Recommend", d: "A response proportionate to your organisation and your budget — digital where relevant, organisational in the first instance in most cases." },
-        { n: "4", t: "Deploy", d: "With your teams, on a pilot scope, prior to any wider rollout." },
-        { n: "5", t: "Sustain", d: "Post-deployment: actual adoption rate, measured gains, adjustments where required." },
-      ],
-    },
     solutionsSection: {
-      eyebrow: "Our offering",
-      h2: "Engage the phase you require — not the entire programme.",
-      p: "Six levels of intervention, from initial diagnostic to preparation for international certification — each designed to generate measurable impact. Each level constitutes an autonomous engagement; consult the one relevant to your needs for its precise scope.",
+      eyebrow: "Our methodology",
+      h2: "Engage the level you require — never without prior consultation.",
+      p: "We engage leadership and operational teams independently, ahead of any recommendation — the condition for a transformation that is durably adopted, rather than a tool abandoned within weeks. This methodology unfolds across six levels of intervention, from initial diagnostic to preparation for international certification: each designed to generate measurable impact, and each mobilisable as an autonomous engagement.",
       hesitant: "Uncertain where to begin? Conseils provides a substantiated opinion, without contractual commitment.",
       labels: { pourQui: "Who it serves", actions: "Services delivered", livrables: "Deliverables", premium: "Premium tier" },
     },

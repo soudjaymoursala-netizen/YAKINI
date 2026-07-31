@@ -171,29 +171,8 @@ function Home() {
           </div>
         </section>
 
-        {/* MÉTHODE */}
-        <section id="methode" className="bg-cream-alt py-20 sm:py-24">
-          <div className="wrap">
-            <div className="reveal max-w-[60ch]">
-              <span className="eyebrow">{c.methode.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.methode.h2}</h2>
-              <p className="mt-4 text-[16px] text-ink-soft">{c.methode.p}</p>
-            </div>
-
-            <ol className="reveal mt-12 grid gap-px overflow-hidden border border-line bg-line sm:grid-cols-2 lg:grid-cols-5">
-              {c.methode.etapes.map((e) => (
-                <li key={e.n} className="bg-cream-alt p-6">
-                  <span className="font-display text-sm font-bold text-teal">{e.n}</span>
-                  <h3 className="mt-2 text-[17px] text-navy">{e.t}</h3>
-                  <p className="mt-2 text-[14.5px] leading-snug text-ink-soft">{e.d}</p>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </section>
-
         {/* SOLUTIONS */}
-        <section id="solutions" className="bg-cream py-20 sm:py-24">
+        <section id="solutions" className="bg-cream-alt py-20 sm:py-24">
           <div className="wrap">
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.solutionsSection.eyebrow}</span>
@@ -217,7 +196,7 @@ function Home() {
         </section>
 
         {/* DIFFÉRENCE */}
-        <section id="difference" className="bg-cream-alt py-20 sm:py-24">
+        <section id="difference" className="bg-cream py-20 sm:py-24">
           <div className="wrap">
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.difference.eyebrow}</span>
