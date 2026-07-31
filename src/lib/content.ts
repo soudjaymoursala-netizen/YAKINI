@@ -124,8 +124,28 @@ const solutionsFr: Solution[] = [
     ],
   },
   {
-    id: "improve",
+    id: "risques",
     step: "02",
+    name: "Gestion des risques",
+    tagline: "Anticiper avant de subir.",
+    objectif:
+      "Nous identifions et hiérarchisons les risques opérationnels, réglementaires et de continuité d'activité qui pèsent sur votre organisation, avant qu'ils ne se traduisent en incident. Une discipline mobilisable seule, ou intégrée à chaque mission.",
+    pourQui: [
+      "Anticiper un risque opérationnel ou réglementaire avant qu'il ne se matérialise",
+      "Sécuriser la continuité d'activité",
+      "Prendre des décisions en connaissance de cause plutôt que dans l'urgence",
+    ],
+    actions: [
+      "Identification et cartographie des risques (méthode ISO 31000)",
+      "Hiérarchisation par criticité (probabilité × impact)",
+      "Analyse de continuité d'activité",
+      "Recommandations de mitigation proportionnées au budget",
+    ],
+    livrables: ["Cartographie des risques", "Matrice de criticité", "Plan de mitigation priorisé"],
+  },
+  {
+    id: "improve",
+    step: "03",
     name: "Optimisation",
     tagline: "Des processus robustes, y compris en conditions de charge élevée.",
     objectif:
@@ -151,7 +171,7 @@ const solutionsFr: Solution[] = [
   },
   {
     id: "transform",
-    step: "03",
+    step: "04",
     name: "Déploiement",
     tagline: "Du plan d'action à la pratique quotidienne — jusqu'à l'adoption effective.",
     objectif:
@@ -178,7 +198,7 @@ const solutionsFr: Solution[] = [
   },
   {
     id: "sustain",
-    step: "04",
+    step: "05",
     name: "Pérennisation",
     tagline: "Ancrer durablement les résultats obtenus, au-delà du déploiement.",
     objectif:
@@ -259,8 +279,28 @@ const solutionsEn: Solution[] = [
     ],
   },
   {
-    id: "improve",
+    id: "risques",
     step: "02",
+    name: "Risk Management",
+    tagline: "Anticipating, rather than absorbing the impact.",
+    objectif:
+      "We identify and prioritise the operational, regulatory and business-continuity risks weighing on your organisation, before they turn into an incident. A discipline that can be mobilised on its own, or built into every engagement.",
+    pourQui: [
+      "Anticipate an operational or regulatory risk before it materialises",
+      "Secure business continuity",
+      "Make decisions with full visibility, rather than under pressure",
+    ],
+    actions: [
+      "Risk identification and mapping (ISO 31000 methodology)",
+      "Prioritisation by criticality (likelihood × impact)",
+      "Business continuity analysis",
+      "Mitigation recommendations proportionate to budget",
+    ],
+    livrables: ["Risk map", "Criticality matrix", "Prioritised mitigation plan"],
+  },
+  {
+    id: "improve",
+    step: "03",
     name: "Improve",
     tagline: "Robust processes, including under conditions of peak load.",
     objectif:
@@ -286,7 +326,7 @@ const solutionsEn: Solution[] = [
   },
   {
     id: "transform",
-    step: "03",
+    step: "04",
     name: "Transform",
     tagline: "From action plan to daily practice — through to effective adoption.",
     objectif:
@@ -313,7 +353,7 @@ const solutionsEn: Solution[] = [
   },
   {
     id: "sustain",
-    step: "04",
+    step: "05",
     name: "Sustain",
     tagline: "Preventing a return to prior practice.",
     objectif:
@@ -423,7 +463,7 @@ export const content: Record<Locale, PageContent> = {
     solutionsSection: {
       eyebrow: "Notre offre",
       h2: "Mobilisez la phase dont vous avez besoin — pas l'intégralité du dispositif.",
-      p: "Cinq niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale. Chaque niveau constitue une prestation autonome. Consultez celui qui correspond à votre besoin pour en connaître le périmètre exact.",
+      p: "Six niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale. Chaque niveau constitue une prestation autonome. Consultez celui qui correspond à votre besoin pour en connaître le périmètre exact.",
       hesitant: "Une hésitation sur le point d'entrée ? Le module Conseils propose un avis motivé, sans engagement contractuel.",
       labels: { pourQui: "Pour qui", actions: "Prestations réalisées", livrables: "Livrables", premium: "Niveau premium" },
     },
@@ -570,7 +610,7 @@ export const content: Record<Locale, PageContent> = {
     solutionsSection: {
       eyebrow: "Our offering",
       h2: "Engage the phase you require — not the entire programme.",
-      p: "Five levels of intervention, from initial diagnostic to preparation for international certification. Each level constitutes an autonomous engagement. Consult the one relevant to your needs for its precise scope.",
+      p: "Six levels of intervention, from initial diagnostic to preparation for international certification. Each level constitutes an autonomous engagement. Consult the one relevant to your needs for its precise scope.",
       hesitant: "Uncertain where to begin? Conseils provides a substantiated opinion, without contractual commitment.",
       labels: { pourQui: "Who it serves", actions: "Services delivered", livrables: "Deliverables", premium: "Premium tier" },
     },
