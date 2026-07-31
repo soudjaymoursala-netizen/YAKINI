@@ -76,6 +76,9 @@ function Home() {
           <div className="wrap grid items-center gap-14 md:grid-cols-[1.15fr_0.85fr]">
             <div>
               <span className="eyebrow">{c.hero.eyebrow}</span>
+              <p className="mt-3 font-display text-[17px] font-semibold tracking-[0.01em] text-bronze-soft">
+                {c.hero.slogan}
+              </p>
               <h1 className="mt-4 text-[clamp(34px,5vw,56px)] leading-[1.06] text-white">
                 {c.hero.h1}
               </h1>
