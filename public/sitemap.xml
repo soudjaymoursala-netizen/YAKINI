@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- À mettre à jour dès que le nom de domaine personnalisé est actif : remplacer
+     https://yakini.soudjaymoursala.workers.dev par le domaine définitif. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://yakini.soudjaymoursala.workers.dev/fr</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yakini.soudjaymoursala.workers.dev/fr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yakini.soudjaymoursala.workers.dev/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yakini.soudjaymoursala.workers.dev/fr" />
+  </url>
+  <url>
+    <loc>https://yakini.soudjaymoursala.workers.dev/en</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yakini.soudjaymoursala.workers.dev/fr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yakini.soudjaymoursala.workers.dev/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yakini.soudjaymoursala.workers.dev/fr" />
+  </url>
+</urlset>

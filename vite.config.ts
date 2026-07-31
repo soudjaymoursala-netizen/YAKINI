@@ -22,11 +22,26 @@ export default defineConfig(async ({ command }) => {
 
   if (command === "build") {
     const { nitro } = await import("nitro/vite");
-    plugins.push(nitro({ preset: "cloudflare-module" }));
+    plugins.push(
+      nitro({
+        preset: "cloudflare-module",
+        routeRules: {
+          "/**": {
+            headers: {
+              "X-Content-Type-Options": "nosniff",
+              "X-Frame-Options": "DENY",
+              "Referrer-Policy": "strict-origin-when-cross-origin",
+              "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+              "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+            },
+          },
+        },
+      }),
+    );
   }
 
   return {
-    css: { transformer: "lightningcss" },
+    css: { transformer: "lightningcss" as const },
     resolve: {
       alias: { "@": `${process.cwd()}/src` },
       dedupe: [
