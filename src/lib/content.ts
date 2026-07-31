@@ -419,7 +419,7 @@ export const content: Record<Locale, PageContent> = {
         { href: "#origine", label: "Origine" },
         { href: "#methode", label: "Méthodologie" },
         { href: "#solutions", label: "Solutions" },
-        { href: "#difference", label: "Différenciation" },
+        { href: "#difference", label: "Pourquoi nous" },
         { href: "#expertise", label: "Expertise" },
       ],
       contact: "Nous contacter",
@@ -470,7 +470,7 @@ export const content: Record<Locale, PageContent> = {
     },
     solutions: solutionsFr,
     difference: {
-      eyebrow: "Notre différenciation",
+      eyebrow: "Pourquoi nous",
       h2: "Notre discipline : refuser une mission plutôt que vendre au-delà du nécessaire.",
       items: [
         { t: "L'écoute des équipes opérationnelles", d: "Une solution conçue sans ses utilisateurs finaux est, par construction, vouée à l'abandon. Nous les rencontrons hors présence hiérarchique et confrontons leur expérience à la vision de la direction." },
@@ -567,7 +567,7 @@ export const content: Record<Locale, PageContent> = {
         { href: "#origine", label: "Origin" },
         { href: "#methode", label: "Methodology" },
         { href: "#solutions", label: "Solutions" },
-        { href: "#difference", label: "Differentiation" },
+        { href: "#difference", label: "Why us" },
         { href: "#expertise", label: "Expertise" },
       ],
       contact: "Contact us",
@@ -618,7 +618,7 @@ export const content: Record<Locale, PageContent> = {
     },
     solutions: solutionsEn,
     difference: {
-      eyebrow: "Our differentiation",
+      eyebrow: "Why us",
       h2: "Our discipline: declining an engagement rather than overselling.",
       items: [
         { t: "Engagement with operational teams", d: "A solution designed without its end users is, by construction, destined for abandonment. We meet them away from the hierarchy and set their experience against leadership's perspective." },
