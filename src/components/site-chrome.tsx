@@ -151,10 +151,11 @@ export function BrandMark({ className }: { className?: string }) {
   );
 }
 
-export function SiteFooter({ footer }: { footer: PageContent["footer"] }) {
+export function SiteFooter({ footer, slogan }: { footer: PageContent["footer"]; slogan: string }) {
   return (
     <footer className="bg-navy-deep py-8 text-[13px] text-on-navy-soft">
       <div className="wrap flex flex-col gap-2">
+        <p className="font-display text-[15px] font-semibold text-bronze-soft">{slogan}</p>
         <div className="flex flex-wrap items-center justify-between gap-3">
           <span>{footer.tagline}</span>
           <span>© {new Date().getFullYear()}</span>

@@ -350,7 +350,7 @@ function Home() {
         </section>
       </main>
 
-      <SiteFooter footer={c.footer} />
+      <SiteFooter footer={c.footer} slogan={c.hero.slogan} />
     </div>
   );
 }
