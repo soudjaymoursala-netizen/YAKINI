@@ -115,6 +115,12 @@ export function SiteFooter({ footer }: { footer: PageContent["footer"] }) {
           <span>© {new Date().getFullYear()}</span>
         </div>
         <p className="text-[12px] italic text-on-navy-soft/80">{footer.brandNote}</p>
+        <details className="mt-1 text-[12px] text-on-navy-soft/80">
+          <summary className="cursor-pointer select-none underline-offset-2 hover:text-on-navy hover:underline">
+            {footer.legalSummary}
+          </summary>
+          <p className="mt-2 max-w-[70ch] leading-relaxed">{footer.legalBody}</p>
+        </details>
       </div>
     </footer>
   );

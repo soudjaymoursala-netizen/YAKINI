@@ -90,7 +90,7 @@ export type PageContent = {
     ctaEmail: string;
     ctaBack: string;
   };
-  footer: { tagline: string; brandNote: string };
+  footer: { tagline: string; brandNote: string; legalSummary: string; legalBody: string };
   notFound: { title: string; body: string; cta: string };
 };
 
@@ -502,6 +502,8 @@ export const content: Record<Locale, PageContent> = {
     footer: {
       tagline: "YAKINI — Conseil en excellence opérationnelle & transformation digitale · Union des Comores",
       brandNote: "Yakini, du shikomori : la certitude, la preuve — l'exigence qui porte chacune de nos missions.",
+      legalSummary: "Mentions légales",
+      legalBody: "Site édité à titre personnel par Moursala Soudjay, dans le cadre de la constitution de Yakini (entreprise en cours de création aux Comores). Directeur de la publication : Moursala Soudjay — contact@yakini.km. Hébergement : Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, États-Unis.",
     },
     notFound: {
       title: "Page introuvable",
@@ -646,6 +648,8 @@ export const content: Record<Locale, PageContent> = {
     footer: {
       tagline: "YAKINI — Operational excellence consulting & digital transformation · Union of the Comoros",
       brandNote: "Yakini, from Shikomori: certainty, proof — the standard behind every mission we take on.",
+      legalSummary: "Legal notice",
+      legalBody: "This site is published on a personal basis by Moursala Soudjay, in connection with the incorporation of Yakini (a company currently being established in the Comoros). Publication director: Moursala Soudjay — contact@yakini.km. Hosting: Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, USA.",
     },
     notFound: {
       title: "Page not found",

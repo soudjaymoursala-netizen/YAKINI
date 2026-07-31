@@ -50,6 +50,8 @@
   --color-cream-alt: var(--cream-alt);
   --color-bronze: var(--bronze);
   --color-bronze-soft: var(--bronze-soft);
+  --color-bronze-button: var(--bronze-button);
+  --color-bronze-button-hover: var(--bronze-button-hover);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-on-navy: var(--on-navy);
@@ -72,6 +74,11 @@
   --cream-alt: oklch(0.938 0.014 84.6);
   --bronze: oklch(0.609 0.096 69.5);
   --bronze-soft: oklch(0.716 0.095 72.7);
+  /* Variante réservée aux boutons (texte blanc dessus) : le bronze de marque
+     (L=0.609) ne passe qu'à 3.88:1 avec du blanc, sous le seuil WCAG AA
+     (4.5:1) pour du texte normal. Même teinte, luminosité ajustée. */
+  --bronze-button: oklch(0.55 0.096 69.5);
+  --bronze-button-hover: oklch(0.45 0.096 69.5);
   --ink: oklch(0.237 0.036 248.1);
   --ink-soft: oklch(0.482 0.029 246.6);
   --on-navy: oklch(0.944 0.01 252.8);
@@ -188,11 +195,11 @@
 
   /* Bronze : CTA et moments-clés uniquement */
   .btn-bronze {
-    background-color: var(--color-bronze);
+    background-color: var(--color-bronze-button);
     color: oklch(1 0 0);
   }
   .btn-bronze:hover {
-    background-color: var(--color-bronze-soft);
+    background-color: var(--color-bronze-button-hover);
   }
 
   .btn-navy {

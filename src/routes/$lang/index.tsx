@@ -62,11 +62,17 @@ function Home() {
 
   return (
     <div id="top">
+      <a
+        href="#contenu"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded focus:bg-bronze-button focus:px-4 focus:py-2 focus:text-white"
+      >
+        {lang === "en" ? "Skip to content" : "Aller au contenu"}
+      </a>
       <SiteNav lang={lang} nav={c.nav} />
 
       <main>
         {/* HERO */}
-        <section className="on-navy bg-navy py-20 text-on-navy sm:py-28">
+        <section id="contenu" className="on-navy bg-navy py-20 text-on-navy sm:py-28">
           <div className="wrap grid items-center gap-14 md:grid-cols-[1.15fr_0.85fr]">
             <div>
               <span className="eyebrow">{c.hero.eyebrow}</span>
