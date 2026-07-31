@@ -443,7 +443,7 @@ export const content: Record<Locale, PageContent> = {
       p3: "De l'audit à la mise en œuvre, nous couvrons l'ensemble de la chaîne de transformation — conseil, audit et gestion des risques, solutions digitales et intelligence artificielle, formation, suivi de la performance — au service d'une création de valeur mesurable, ancrée dans le quotidien de chaque organisation comorienne.",
     },
     solutionsSection: {
-      eyebrow: "Notre méthodologie",
+      eyebrow: "Nos solutions",
       h2: "Mobilisez le niveau dont vous avez besoin — jamais sans concertation préalable.",
       p: "Nous mobilisons la direction et les équipes opérationnelles séparément, en amont de toute recommandation — la condition d'une transformation durablement adoptée, plutôt que d'un outil abandonné après quelques semaines. Cette méthode se décline en six niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale : chacun conçu pour générer un impact mesurable, et mobilisable comme une prestation autonome.",
       hesitant: "Une hésitation sur le point d'entrée ? Le module Conseils propose un avis motivé, sans engagement contractuel.",
@@ -578,7 +578,7 @@ export const content: Record<Locale, PageContent> = {
       p3: "From audit to implementation, we cover the full transformation chain — advisory, audit and risk management, digital and AI solutions, training, performance follow-up — in service of measurable value creation, grounded in the daily reality of every Comorian organisation.",
     },
     solutionsSection: {
-      eyebrow: "Our methodology",
+      eyebrow: "Our solutions",
       h2: "Engage the level you require — never without prior consultation.",
       p: "We engage leadership and operational teams independently, ahead of any recommendation — the condition for a transformation that is durably adopted, rather than a tool abandoned within weeks. This methodology unfolds across six levels of intervention, from initial diagnostic to preparation for international certification: each designed to generate measurable impact, and each mobilisable as an autonomous engagement.",
       hesitant: "Uncertain where to begin? Conseils provides a substantiated opinion, without contractual commitment.",
