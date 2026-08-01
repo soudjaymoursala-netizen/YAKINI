@@ -82,7 +82,7 @@ function Home() {
               <h1 className="mt-4 text-[clamp(34px,5vw,56px)] leading-[1.06] text-white">
                 {c.hero.h1}
               </h1>
-              <p className="mt-6 max-w-[56ch] text-[17px] text-on-navy-soft">{c.hero.lede}</p>
+              <p className="mt-6 max-w-[56ch] text-justify text-[17px] text-on-navy-soft">{c.hero.lede}</p>
               <div className="mt-9 flex flex-wrap items-center gap-5">
                 <a href="#contact" className="btn btn-bronze">
                   {c.hero.ctaPrimary}
@@ -130,14 +130,14 @@ function Home() {
             <div className="reveal">
               <span className="eyebrow">{c.secteurs.eyebrow}</span>
               <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-navy">{c.secteurs.h2}</h2>
-              <p className="mt-4 text-[16px] text-ink-soft">{c.secteurs.p}</p>
+              <p className="mt-4 text-justify text-[16px] text-ink-soft">{c.secteurs.p}</p>
             </div>
 
             <div className="reveal mt-10 grid gap-5 md:grid-cols-2">
               <article className="surface p-7">
                 <span className="eyebrow">{c.secteurs.public.eyebrow}</span>
                 <h3 className="mt-3 text-[19px] text-navy">{c.secteurs.public.h3}</h3>
-                <p className="mt-3 text-[14.5px] text-ink-soft">{c.secteurs.public.p}</p>
+                <p className="mt-3 text-justify text-[14.5px] text-ink-soft">{c.secteurs.public.p}</p>
                 <p className="mt-5 text-[13px] font-medium uppercase tracking-[0.03em] text-bronze">
                   {c.secteurs.public.chips.join(" · ")}
                 </p>
@@ -148,7 +148,7 @@ function Home() {
               <article className="surface p-7">
                 <span className="eyebrow">{c.secteurs.prive.eyebrow}</span>
                 <h3 className="mt-3 text-[19px] text-navy">{c.secteurs.prive.h3}</h3>
-                <p className="mt-3 text-[14.5px] text-ink-soft">{c.secteurs.prive.p}</p>
+                <p className="mt-3 text-justify text-[14.5px] text-ink-soft">{c.secteurs.prive.p}</p>
                 <p className="mt-5 text-[13px] font-medium uppercase tracking-[0.03em] text-bronze">
                   {c.secteurs.prive.chips.join(" · ")}
                 </p>
@@ -165,9 +165,9 @@ function Home() {
           <div className="wrap">
             <span className="eyebrow">{c.apropos.eyebrow}</span>
             <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-navy">{c.apropos.h2}</h2>
-            <p className="mt-5 text-[16px] leading-relaxed text-ink-soft">{c.apropos.p1}</p>
-            <p className="mt-4 text-[16px] leading-relaxed text-ink-soft">{c.apropos.p2}</p>
-            <p className="mt-4 text-[16px] leading-relaxed text-ink-soft">{c.apropos.p3}</p>
+            <p className="mt-5 text-justify text-[16px] leading-relaxed text-ink-soft">{c.apropos.p1}</p>
+            <p className="mt-4 text-justify text-[16px] leading-relaxed text-ink-soft">{c.apropos.p2}</p>
+            <p className="mt-4 text-justify text-[16px] leading-relaxed text-ink-soft">{c.apropos.p3}</p>
           </div>
         </section>
 
@@ -179,7 +179,7 @@ function Home() {
               <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-navy">
                 {c.solutionsSection.h2}
               </h2>
-              <p className="mt-4 text-[16px] text-ink-soft">{c.solutionsSection.p}</p>
+              <p className="mt-4 text-justify text-[16px] text-ink-soft">{c.solutionsSection.p}</p>
             </div>
 
             <p className="reveal mt-8 inline-flex items-center gap-2.5 rounded-full border border-line bg-white px-5 py-2.5 text-[14.5px] text-ink">
@@ -258,9 +258,9 @@ function Home() {
             <div className="reveal">
               <span className="eyebrow">{c.expertise.eyebrow}</span>
               <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-white">{c.expertise.h2}</h2>
-              <p className="mt-5 max-w-[62ch] text-[16px] text-on-navy-soft">{c.expertise.p1}</p>
-              <p className="mt-4 max-w-[62ch] text-[16px] text-on-navy-soft">{c.expertise.p2}</p>
-              <p className="mt-4 max-w-[62ch] text-[16px] text-on-navy-soft">{c.expertise.p3}</p>
+              <p className="mt-5 max-w-[62ch] text-justify text-[16px] text-on-navy-soft">{c.expertise.p1}</p>
+              <p className="mt-4 max-w-[62ch] text-justify text-[16px] text-on-navy-soft">{c.expertise.p2}</p>
+              <p className="mt-4 max-w-[62ch] text-justify text-[16px] text-on-navy-soft">{c.expertise.p3}</p>
 
               <div className="mt-6 max-w-[62ch] border-l-2 border-bronze-soft py-1 pl-4">
                 <p className="text-[12px] font-medium uppercase tracking-[0.06em] text-on-navy-soft">
@@ -317,7 +317,7 @@ function Home() {
               {c.contact.eyebrow} · {c.contact.welcome}
             </span>
             <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-white">{c.contact.h2}</h2>
-            <p className="mx-auto mt-4 max-w-[56ch] text-[16px] text-on-navy-soft">{c.contact.p}</p>
+            <p className="mx-auto mt-4 max-w-[56ch] text-justify text-[16px] text-on-navy-soft">{c.contact.p}</p>
             <div className="mt-9 flex flex-wrap justify-center gap-4">
               <a href="mailto:contact@yakini.km" className="btn btn-bronze">
                 {c.contact.ctaEmail}

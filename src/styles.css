@@ -124,6 +124,11 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  .text-justify {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
   h1,
   h2,
   h3,
