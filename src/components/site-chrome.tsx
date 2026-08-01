@@ -70,7 +70,7 @@ export function SiteNav({ lang, nav }: { lang: Locale; nav: PageContent["nav"] }
             href={`/${otherLang}`}
             hrefLang={otherLang}
             aria-label={otherLang === "en" ? "Switch to English" : "Passer en français"}
-            className="text-sm font-semibold text-ink-soft transition-colors hover:text-navy"
+            className="rounded px-2 py-2 text-sm font-semibold text-ink-soft transition-colors hover:text-navy"
           >
             {nav.langLabel}
           </a>

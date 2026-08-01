@@ -114,6 +114,10 @@
 
   html {
     scroll-behavior: smooth;
+    /* Complète scroll-margin-top des sections : couvre aussi le focus clavier
+       sur n'importe quel élément, pas seulement les sauts d'ancre de nav
+       (WCAG 2.2 — 2.4.11 Focus non masqué) */
+    scroll-padding-top: 88px;
   }
 
   body {
