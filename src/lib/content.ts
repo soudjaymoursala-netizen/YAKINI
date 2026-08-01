@@ -425,7 +425,7 @@ export const content: Record<Locale, PageContent> = {
       lede:
         "Files d'attente non maîtrisées, documentation lacunaire, délais de traitement en dérive, données dispersées : nous conduisons un diagnostic rigoureux pour en identifier la cause racine, puis nous la traitons — par le digital lorsqu'il constitue la réponse adaptée, par d'autres leviers lorsque ce n'est pas le cas.",
       ctaPrimary: "Solliciter un premier échange",
-      ctaSecondary: "Découvrir notre méthodologie ↓",
+      ctaSecondary: "Découvrir nos solutions ↓",
       figcaption: "Vision de la Direction, réalité opérationnelle du terrain — une même solution.",
     },
     boussole: {
@@ -560,7 +560,7 @@ export const content: Record<Locale, PageContent> = {
       lede:
         "Unmanaged queues, patchy documentation, lead times in drift, dispersed data: we conduct a rigorous diagnostic to identify the root cause, then address it — through digital means where they constitute the appropriate response, through other levers where they do not.",
       ctaPrimary: "Request a diagnostic conversation",
-      ctaSecondary: "Discover our methodology ↓",
+      ctaSecondary: "Discover our solutions ↓",
       figcaption: "Leadership's perspective, operational reality on the ground — one solution.",
     },
     boussole: {

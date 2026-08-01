@@ -88,7 +88,7 @@ function Home() {
                   {c.hero.ctaPrimary}
                 </a>
                 <a
-                  href="#methode"
+                  href="#solutions"
                   className="text-sm font-medium text-on-navy-soft transition-colors hover:text-bronze-soft"
                 >
                   {c.hero.ctaSecondary}
