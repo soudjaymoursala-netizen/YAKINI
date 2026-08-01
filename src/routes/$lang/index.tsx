@@ -129,7 +129,7 @@ function Home() {
           <div className="wrap">
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.secteurs.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.secteurs.h2}</h2>
+              <h2 className="mt-3 text-[clamp(28px,3.8vw,46px)] text-navy">{c.secteurs.h2}</h2>
               <p className="mt-4 text-[16px] text-ink-soft">{c.secteurs.p}</p>
             </div>
 
@@ -164,7 +164,7 @@ function Home() {
         <section id="origine" className="reveal bg-cream py-20 sm:py-24">
           <div className="wrap">
             <span className="eyebrow">{c.apropos.eyebrow}</span>
-            <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.apropos.h2}</h2>
+            <h2 className="mt-3 text-[clamp(28px,3.8vw,46px)] text-navy">{c.apropos.h2}</h2>
             <p className="mt-5 max-w-[75ch] text-[16px] leading-relaxed text-ink-soft">{c.apropos.p1}</p>
             <p className="mt-4 max-w-[75ch] text-[16px] leading-relaxed text-ink-soft">{c.apropos.p2}</p>
             <p className="mt-4 max-w-[75ch] text-[16px] leading-relaxed text-ink-soft">{c.apropos.p3}</p>
@@ -176,7 +176,7 @@ function Home() {
           <div className="wrap">
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.solutionsSection.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">
+              <h2 className="mt-3 text-[clamp(28px,3.8vw,46px)] text-navy">
                 {c.solutionsSection.h2}
               </h2>
               <p className="mt-4 text-[16px] text-ink-soft">{c.solutionsSection.p}</p>
@@ -200,7 +200,7 @@ function Home() {
           <div className="wrap">
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.difference.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.difference.h2}</h2>
+              <h2 className="mt-3 text-[clamp(28px,3.8vw,46px)] text-navy">{c.difference.h2}</h2>
             </div>
 
             <div className="reveal mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -289,7 +289,7 @@ function Home() {
           <div className="wrap">
             <div className="reveal max-w-[60ch]">
               <span className="eyebrow">{c.faq.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.faq.h2}</h2>
+              <h2 className="mt-3 text-[clamp(28px,3.8vw,46px)] text-navy">{c.faq.h2}</h2>
             </div>
             <div className="reveal mt-9 max-w-[80ch] divide-y divide-line border-y border-line">
               {c.faq.items.map((item) => (
