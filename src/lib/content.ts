@@ -409,11 +409,11 @@ export const content: Record<Locale, PageContent> = {
     },
     nav: {
       links: [
-        { href: "#secteurs", label: "Secteurs" },
+        { href: "#secteurs", label: "Pour qui" },
         { href: "#origine", label: "Notre conviction" },
         { href: "#solutions", label: "Nos solutions" },
         { href: "#difference", label: "Pourquoi nous" },
-        { href: "#expertise", label: "Expertise" },
+        { href: "#expertise", label: "Notre fondateur" },
       ],
       contact: "Nous contacter",
       langLabel: "EN",
@@ -471,7 +471,7 @@ export const content: Record<Locale, PageContent> = {
       specialiteValue: "Qualification & validation des équipements et systèmes informatisés (CQV/CSV)",
       attacheLabel: "Ancrage",
       attacheValue: "Franco-comorien, né aux Comores",
-      eyebrow: "Notre expertise",
+      eyebrow: "Notre fondateur",
       h2: "Une exigence méthodologique héritée d'un secteur où l'approximation n'a pas sa place.",
       p1: "Yakini est né du parcours professionnel de Moursala Soudjay : plus de cinq ans en tant que consultant en qualité, validation et amélioration continue au sein de l'industrie pharmaceutique, en France puis en Suisse, après une formation à l'Université Claude Bernard Lyon 1. Un secteur où aucun système n'est présumé fonctionnel tant que sa performance n'a pas été démontrée, documentée et vérifiée selon un protocole formel.",
       p2: "Sur le terrain, cette expertise s'est construite au contact direct de la production, de la gestion documentaire, de la maintenance, des automaticiens et des chefs de projet — ainsi que des fournisseurs de services intervenant sur ces environnements. Elle inclut la participation à plusieurs audits menés par des autorités réglementaires : FDA, ANSM, Swissmedic.",
@@ -544,11 +544,11 @@ export const content: Record<Locale, PageContent> = {
     },
     nav: {
       links: [
-        { href: "#secteurs", label: "Sectors" },
+        { href: "#secteurs", label: "Who it's for" },
         { href: "#origine", label: "Our conviction" },
         { href: "#solutions", label: "Our solutions" },
         { href: "#difference", label: "Why us" },
-        { href: "#expertise", label: "Expertise" },
+        { href: "#expertise", label: "Our founder" },
       ],
       contact: "Contact us",
       langLabel: "FR",
@@ -606,7 +606,7 @@ export const content: Record<Locale, PageContent> = {
       specialiteValue: "Equipment & Computer System Qualification/Validation (CQV/CSV)",
       attacheLabel: "Roots",
       attacheValue: "Franco-Comorian, born in the Comoros",
-      eyebrow: "Our expertise",
+      eyebrow: "Our founder",
       h2: "A methodological rigour inherited from a sector where approximation has no place.",
       p1: "Yakini is rooted in Moursala Soudjay's professional path: over five years as a consultant in quality, validation and continuous improvement within the pharmaceutical industry, in France and then Switzerland, following his training at Université Claude Bernard Lyon 1. A sector in which no system is presumed functional until its performance has been demonstrated, documented and verified against a formal protocol.",
       p2: "In the field, this expertise was built through direct work with production, document management, maintenance, automation engineers and project managers — as well as the service providers operating within these environments. It includes participation in several audits conducted by regulatory authorities: the FDA, ANSM and Swissmedic.",
@@ -621,7 +621,7 @@ export const content: Record<Locale, PageContent> = {
       certRoadmapItems: ["ISO 9001 Lead Auditor", "ISO 19011 Auditor", "Lean Six Sigma Green Belt"],
     },
     secteurs: {
-      eyebrow: "Who it serves",
+      eyebrow: "Who it's for",
       h2: "The friction looks familiar. Our response never does.",
       p: "Every engagement starts from a diagnostic specific to your organisation, your budget and your level of maturity — never a standard template applied as-is.",
       public: {
