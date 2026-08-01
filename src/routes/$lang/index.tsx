@@ -164,7 +164,7 @@ function Home() {
         <section id="origine" className="reveal bg-cream py-20 sm:py-24">
           <div className="wrap">
             <span className="eyebrow">{c.apropos.eyebrow}</span>
-            <h2 className="mt-3 max-w-[26ch] text-[clamp(26px,3.4vw,40px)] text-navy">{c.apropos.h2}</h2>
+            <h2 className="mt-3 text-[clamp(26px,3.4vw,40px)] text-navy">{c.apropos.h2}</h2>
             <p className="mt-5 max-w-[75ch] text-[16px] leading-relaxed text-ink-soft">{c.apropos.p1}</p>
             <p className="mt-4 max-w-[75ch] text-[16px] leading-relaxed text-ink-soft">{c.apropos.p2}</p>
             <p className="mt-4 max-w-[75ch] text-[16px] leading-relaxed text-ink-soft">{c.apropos.p3}</p>
