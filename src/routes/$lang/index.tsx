@@ -79,7 +79,7 @@ function Home() {
               <p className="mt-3 font-display text-[17px] font-semibold tracking-[0.01em] text-bronze-soft">
                 {c.hero.slogan}
               </p>
-              <h1 className="mt-4 text-[clamp(34px,5vw,56px)] leading-[1.06] text-white">
+              <h1 className="mt-4 text-[clamp(34px,5vw,56px)] leading-[1.06] tracking-[-0.02em] text-white">
                 {c.hero.h1}
               </h1>
               <p className="mt-6 max-w-[56ch] text-[17px] text-on-navy-soft">{c.hero.lede}</p>
@@ -129,7 +129,7 @@ function Home() {
           <div className="wrap">
             <div className="reveal">
               <span className="eyebrow">{c.secteurs.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-navy">{c.secteurs.h2}</h2>
+              <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] tracking-[-0.015em] text-navy">{c.secteurs.h2}</h2>
               <p className="mt-4 text-[16px] text-ink-soft">{c.secteurs.p}</p>
             </div>
 
@@ -164,7 +164,7 @@ function Home() {
         <section id="origine" className="reveal bg-cream py-20 sm:py-24">
           <div className="wrap">
             <span className="eyebrow">{c.apropos.eyebrow}</span>
-            <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-navy">{c.apropos.h2}</h2>
+            <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] tracking-[-0.015em] text-navy">{c.apropos.h2}</h2>
             <p className="mt-5 text-[16px] leading-relaxed text-ink-soft">{c.apropos.p1}</p>
             <p className="mt-4 text-[16px] leading-relaxed text-ink-soft">{c.apropos.p2}</p>
             <p className="mt-4 text-[16px] leading-relaxed text-ink-soft">{c.apropos.p3}</p>
@@ -176,7 +176,7 @@ function Home() {
           <div className="wrap">
             <div className="reveal">
               <span className="eyebrow">{c.solutionsSection.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-navy">
+              <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] tracking-[-0.015em] text-navy">
                 {c.solutionsSection.h2}
               </h2>
               <p className="mt-4 text-[16px] text-ink-soft">{c.solutionsSection.p}</p>
@@ -200,7 +200,7 @@ function Home() {
           <div className="wrap">
             <div className="reveal">
               <span className="eyebrow">{c.difference.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-navy">{c.difference.h2}</h2>
+              <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] tracking-[-0.015em] text-navy">{c.difference.h2}</h2>
             </div>
 
             <div className="reveal mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -257,7 +257,7 @@ function Home() {
 
             <div className="reveal">
               <span className="eyebrow">{c.expertise.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-white">{c.expertise.h2}</h2>
+              <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] tracking-[-0.015em] text-white">{c.expertise.h2}</h2>
               <p className="mt-5 max-w-[62ch] text-[16px] text-on-navy-soft">{c.expertise.p1}</p>
               <p className="mt-4 max-w-[62ch] text-[16px] text-on-navy-soft">{c.expertise.p2}</p>
               <p className="mt-4 max-w-[62ch] text-[16px] text-on-navy-soft">{c.expertise.p3}</p>
@@ -289,7 +289,7 @@ function Home() {
           <div className="wrap">
             <div className="reveal">
               <span className="eyebrow">{c.faq.eyebrow}</span>
-              <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-navy">{c.faq.h2}</h2>
+              <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] tracking-[-0.015em] text-navy">{c.faq.h2}</h2>
             </div>
             <div className="reveal mt-9 max-w-[95ch] divide-y divide-line border-y border-line">
               {c.faq.items.map((item) => (
@@ -316,7 +316,7 @@ function Home() {
             <span className="eyebrow">
               {c.contact.eyebrow} · {c.contact.welcome}
             </span>
-            <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] text-white">{c.contact.h2}</h2>
+            <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] tracking-[-0.015em] text-white">{c.contact.h2}</h2>
             <p className="mx-auto mt-4 max-w-[56ch] text-[16px] text-on-navy-soft">{c.contact.p}</p>
             <div className="mt-9 flex flex-wrap justify-center gap-4">
               <a href="mailto:contact@yakini.km" className="btn btn-bronze">
