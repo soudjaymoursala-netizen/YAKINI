@@ -127,7 +127,7 @@ function Home() {
         {/* SECTEURS */}
         <section id="secteurs" className="bg-cream-alt py-20 sm:py-24">
           <div className="wrap">
-            <div className="reveal max-w-[60ch]">
+            <div className="reveal">
               <span className="eyebrow">{c.secteurs.eyebrow}</span>
               <h2 className="mt-3 text-[clamp(28px,3.8vw,46px)] text-navy">{c.secteurs.h2}</h2>
               <p className="mt-4 text-[16px] text-ink-soft">{c.secteurs.p}</p>
@@ -174,7 +174,7 @@ function Home() {
         {/* SOLUTIONS */}
         <section id="solutions" className="bg-cream-alt py-20 sm:py-24">
           <div className="wrap">
-            <div className="reveal max-w-[60ch]">
+            <div className="reveal">
               <span className="eyebrow">{c.solutionsSection.eyebrow}</span>
               <h2 className="mt-3 text-[clamp(28px,3.8vw,46px)] text-navy">
                 {c.solutionsSection.h2}
@@ -198,7 +198,7 @@ function Home() {
         {/* DIFFÉRENCE */}
         <section id="difference" className="bg-cream py-20 sm:py-24">
           <div className="wrap">
-            <div className="reveal max-w-[60ch]">
+            <div className="reveal">
               <span className="eyebrow">{c.difference.eyebrow}</span>
               <h2 className="mt-3 text-[clamp(28px,3.8vw,46px)] text-navy">{c.difference.h2}</h2>
             </div>
@@ -287,11 +287,11 @@ function Home() {
         {/* FAQ */}
         <section id="questions" className="bg-cream py-20 sm:py-24">
           <div className="wrap">
-            <div className="reveal max-w-[60ch]">
+            <div className="reveal">
               <span className="eyebrow">{c.faq.eyebrow}</span>
               <h2 className="mt-3 text-[clamp(28px,3.8vw,46px)] text-navy">{c.faq.h2}</h2>
             </div>
-            <div className="reveal mt-9 max-w-[80ch] divide-y divide-line border-y border-line">
+            <div className="reveal mt-9 max-w-[95ch] divide-y divide-line border-y border-line">
               {c.faq.items.map((item) => (
                 <details key={item.q} className="group py-5">
                   <summary className="flex cursor-pointer list-none items-start justify-between gap-6 font-display text-[16.5px] font-bold text-navy">
@@ -303,7 +303,7 @@ function Home() {
                       +
                     </span>
                   </summary>
-                  <p className="mt-3 max-w-[70ch] text-[15px] text-ink-soft">{item.r}</p>
+                  <p className="mt-3 max-w-[85ch] text-[15px] text-ink-soft">{item.r}</p>
                 </details>
               ))}
             </div>
