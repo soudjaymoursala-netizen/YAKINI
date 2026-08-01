@@ -409,7 +409,7 @@ export const content: Record<Locale, PageContent> = {
     },
     nav: {
       links: [
-        { href: "#secteurs", label: "Votre organisation" },
+        { href: "#secteurs", label: "Secteurs concernés" },
         { href: "#origine", label: "Notre conviction" },
         { href: "#solutions", label: "Nos solutions" },
         { href: "#difference", label: "Pourquoi nous" },
@@ -486,7 +486,7 @@ export const content: Record<Locale, PageContent> = {
       certRoadmapItems: ["ISO 9001 Lead Auditor", "ISO 19011 Auditeur", "Lean Six Sigma Green Belt"],
     },
     secteurs: {
-      eyebrow: "Votre organisation",
+      eyebrow: "Secteurs concernés",
       h2: "Les dysfonctionnements se ressemblent — nos réponses, jamais.",
       p: "Chaque mission part d'un diagnostic propre à votre organisation, votre budget et votre niveau de maturité — jamais d'un modèle standard appliqué tel quel.",
       public: {
@@ -544,7 +544,7 @@ export const content: Record<Locale, PageContent> = {
     },
     nav: {
       links: [
-        { href: "#secteurs", label: "Your organisation" },
+        { href: "#secteurs", label: "Sectors we serve" },
         { href: "#origine", label: "Our conviction" },
         { href: "#solutions", label: "Our solutions" },
         { href: "#difference", label: "Why us" },
@@ -621,7 +621,7 @@ export const content: Record<Locale, PageContent> = {
       certRoadmapItems: ["ISO 9001 Lead Auditor", "ISO 19011 Auditor", "Lean Six Sigma Green Belt"],
     },
     secteurs: {
-      eyebrow: "Your organisation",
+      eyebrow: "Sectors we serve",
       h2: "The friction looks familiar. Our response never does.",
       p: "Every engagement starts from a diagnostic specific to your organisation, your budget and your level of maturity — never a standard template applied as-is.",
       public: {
