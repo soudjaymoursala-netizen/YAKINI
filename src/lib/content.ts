@@ -421,7 +421,7 @@ export const content: Record<Locale, PageContent> = {
     hero: {
       eyebrow: "Conseil en excellence opérationnelle, qualité & transformation digitale — Union des Comores",
       slogan: "La fiabilité comme métier. L'excellence comme exigence.",
-      h1: "Yakini vous aide à fiabiliser vos opérations et à simplifier ce qui doit l'être.",
+      h1: "Yakini fiabilise vos opérations et simplifie ce qui doit l'être.",
       lede:
         "Files d'attente non maîtrisées, documentation lacunaire, délais de traitement en dérive, données dispersées : nous conduisons un diagnostic rigoureux pour en identifier la cause racine, puis nous la traitons — par le digital lorsqu'il constitue la réponse adaptée, par d'autres leviers lorsque ce n'est pas le cas.",
       ctaPrimary: "Solliciter un premier échange",
@@ -556,7 +556,7 @@ export const content: Record<Locale, PageContent> = {
     hero: {
       eyebrow: "Operational excellence consulting, quality & digital transformation — Union of the Comoros",
       slogan: "Reliability as a discipline. Excellence as a standard.",
-      h1: "Yakini helps you make your operations reliable — and simplifies what should be simple.",
+      h1: "Yakini makes your operations reliable — and simplifies what should be simple.",
       lede:
         "Unmanaged queues, patchy documentation, lead times in drift, dispersed data: we conduct a rigorous diagnostic to identify the root cause, then address it — through digital means where they constitute the appropriate response, through other levers where they do not.",
       ctaPrimary: "Request a diagnostic conversation",
