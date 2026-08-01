@@ -96,7 +96,7 @@ function Home() {
               </div>
             </div>
 
-            <figure className="mx-auto w-full max-w-[300px]">
+            <figure className="mx-auto w-full max-w-[420px]">
               <svg viewBox="0 0 300 260" fill="none" aria-hidden="true" className="w-full">
                 <path d="M40 20 C 90 70, 120 100, 150 130" stroke="white" strokeWidth="1.5" />
                 <path d="M260 20 C 210 70, 180 100, 150 130" stroke="#C89A5E" strokeWidth="1.5" />
