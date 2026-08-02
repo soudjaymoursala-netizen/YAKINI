@@ -263,6 +263,12 @@ function Home() {
                     <dd className="text-white">{c.expertise.attacheValue}</dd>
                   </div>
                 </dl>
+                <div className="mt-6 border-t border-line-on-navy pt-6">
+                  <p className="text-[12px] font-medium uppercase tracking-[0.06em] text-on-navy-soft">
+                    {c.expertise.clientsIntro}
+                  </p>
+                  <p className="mt-2 text-[13.5px] leading-relaxed text-white">{c.expertise.clientsList}</p>
+                </div>
               </div>
             </div>
 
@@ -278,13 +284,6 @@ function Home() {
                   {c.expertise.pharmaIntro}
                 </p>
                 <p className="mt-1.5 text-[14px] leading-relaxed text-white">{c.expertise.pharmaList}</p>
-              </div>
-
-              <div className="mt-4 max-w-[62ch] border-l-2 border-bronze-soft py-1 pl-4">
-                <p className="text-[12px] font-medium uppercase tracking-[0.06em] text-on-navy-soft">
-                  {c.expertise.clientsIntro}
-                </p>
-                <p className="mt-1.5 text-[14px] leading-relaxed text-white">{c.expertise.clientsList}</p>
               </div>
 
               <div className="mt-10 grid gap-8 sm:grid-cols-2">
