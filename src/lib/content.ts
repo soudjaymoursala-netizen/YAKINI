@@ -18,6 +18,7 @@ export type PageContent = {
   meta: { title: string; description: string; ogLocale: string };
   nav: {
     links: { href: string; label: string }[];
+    newsLabel: string;
     contact: string;
     langLabel: string;
   };
@@ -195,8 +196,32 @@ const solutionsFr: Solution[] = [
     ],
   },
   {
-    id: "sustain",
+    id: "ia",
     step: "05",
+    name: "Accompagnement IA",
+    tagline: "Mettre l'intelligence artificielle au service de votre activité, pas l'inverse.",
+    objectif:
+      "Nous identifions où l'intelligence artificielle apporte une valeur réelle et mesurable pour votre organisation — jamais comme une réponse par défaut. Diagnostic des cas d'usage pertinents, choix d'outils adaptés à votre connectivité et votre budget, accompagnement de vos équipes dans l'adoption au quotidien.",
+    pourQui: [
+      "Identifier des cas d'usage IA réellement utiles pour votre activité",
+      "Automatiser des tâches répétitives ou chronophages",
+      "Exploiter vos données pour éclairer la décision",
+    ],
+    actions: [
+      "Diagnostic des cas d'usage IA pertinents pour votre organisation",
+      "Sélection d'outils adaptés à votre connectivité et à votre budget",
+      "Mise en place d'assistants IA, d'automatisations ou de tableaux de bord pilotés par la donnée",
+      "Formation de vos équipes à l'usage quotidien",
+    ],
+    livrables: [
+      "Cartographie des cas d'usage IA prioritaires",
+      "Outils configurés et déployés",
+      "Équipes formées à leur usage",
+    ],
+  },
+  {
+    id: "sustain",
+    step: "06",
     name: "Pérennisation",
     tagline: "Ancrer durablement les résultats obtenus, au-delà du déploiement.",
     objectif:
@@ -350,8 +375,28 @@ const solutionsEn: Solution[] = [
     ],
   },
   {
-    id: "sustain",
+    id: "ia",
     step: "05",
+    name: "AI Support",
+    tagline: "Putting artificial intelligence to work for your business — not the other way around.",
+    objectif:
+      "We identify where artificial intelligence delivers genuine, measurable value for your organisation — never as a default answer. Diagnostic of relevant use cases, selection of tools suited to your connectivity and budget, and support for your teams in day-to-day adoption.",
+    pourQui: [
+      "Identify AI use cases genuinely useful to your business",
+      "Automate repetitive or time-consuming tasks",
+      "Put your data to work in support of decision-making",
+    ],
+    actions: [
+      "Diagnostic of relevant AI use cases for your organisation",
+      "Selection of tools suited to your connectivity and budget",
+      "Implementation of AI assistants, automations, or data-driven dashboards",
+      "Training your teams for day-to-day use",
+    ],
+    livrables: ["Map of priority AI use cases", "Configured and deployed tools", "Teams trained in their use"],
+  },
+  {
+    id: "sustain",
+    step: "06",
     name: "Sustain",
     tagline: "Preventing a return to prior practice.",
     objectif:
@@ -419,6 +464,7 @@ export const content: Record<Locale, PageContent> = {
         { href: "#difference", label: "Pourquoi nous" },
         { href: "#expertise", label: "Notre fondateur" },
       ],
+      newsLabel: "News",
       contact: "Nous contacter",
       langLabel: "EN",
     },
@@ -449,7 +495,7 @@ export const content: Record<Locale, PageContent> = {
     solutionsSection: {
       eyebrow: "Nos solutions",
       h2: "Mobilisez le niveau dont vous avez besoin — jamais sans concertation préalable.",
-      p: "Nous mobilisons la direction et les équipes opérationnelles séparément, en amont de toute recommandation — la condition d'une transformation durablement adoptée, plutôt que d'un outil abandonné après quelques semaines. Cette méthode se décline en six niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale : chacun conçu pour générer un impact mesurable, et mobilisable comme une prestation autonome.",
+      p: "Nous mobilisons la direction et les équipes opérationnelles séparément, en amont de toute recommandation — la condition d'une transformation durablement adoptée, plutôt que d'un outil abandonné après quelques semaines. Cette méthode se décline en sept niveaux d'intervention, du diagnostic initial à la préparation d'une certification internationale : chacun conçu pour générer un impact mesurable, et mobilisable comme une prestation autonome.",
       hesitant: "Une hésitation sur le point d'entrée ? Le module Conseils propose un avis motivé, sans engagement contractuel.",
       labels: { pourQui: "Pour qui", actions: "Prestations réalisées", livrables: "Livrables", premium: "Niveau premium" },
     },
@@ -473,7 +519,7 @@ export const content: Record<Locale, PageContent> = {
       terrainLabel: "Secteur",
       terrainValue: "Consultant en industrie pharmaceutique (5 ans et plus) — France, Suisse",
       specialiteLabel: "Spécialité",
-      specialiteValue: "Qualification & validation des équipements et systèmes informatisés (CQV/CSV)",
+      specialiteValue: "Ingénierie CQV/CSV, systèmes de gestion de la qualité, amélioration continue, Power BI & analyse de données",
       attacheLabel: "Ancrage",
       attacheValue: "Franco-comorien, né aux Comores",
       eyebrow: "Notre fondateur",
@@ -558,6 +604,7 @@ export const content: Record<Locale, PageContent> = {
         { href: "#difference", label: "Why us" },
         { href: "#expertise", label: "Our founder" },
       ],
+      newsLabel: "News",
       contact: "Contact us",
       langLabel: "FR",
     },
@@ -588,7 +635,7 @@ export const content: Record<Locale, PageContent> = {
     solutionsSection: {
       eyebrow: "Our solutions",
       h2: "Engage the level you require — never without prior consultation.",
-      p: "We engage leadership and operational teams independently, ahead of any recommendation — the condition for a transformation that is durably adopted, rather than a tool abandoned within weeks. This methodology unfolds across six levels of intervention, from initial diagnostic to preparation for international certification: each designed to generate measurable impact, and each mobilisable as an autonomous engagement.",
+      p: "We engage leadership and operational teams independently, ahead of any recommendation — the condition for a transformation that is durably adopted, rather than a tool abandoned within weeks. This methodology unfolds across seven levels of intervention, from initial diagnostic to preparation for international certification: each designed to generate measurable impact, and each mobilisable as an autonomous engagement.",
       hesitant: "Uncertain where to begin? Conseils provides a substantiated opinion, without contractual commitment.",
       labels: { pourQui: "Who it serves", actions: "Services delivered", livrables: "Deliverables", premium: "Premium tier" },
     },
@@ -612,7 +659,7 @@ export const content: Record<Locale, PageContent> = {
       terrainLabel: "Sector",
       terrainValue: "Pharmaceutical industry consultant (5+ years) — France, Switzerland",
       specialiteLabel: "Specialty",
-      specialiteValue: "Equipment & Computer System Qualification/Validation (CQV/CSV)",
+      specialiteValue: "CQV/CSV engineering, quality management systems, continuous improvement, Power BI & data analysis",
       attacheLabel: "Roots",
       attacheValue: "Franco-Comorian, born in the Comoros",
       eyebrow: "Our founder",
