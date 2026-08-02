@@ -267,7 +267,20 @@ function Home() {
                   <p className="text-[12px] font-medium uppercase tracking-[0.06em] text-on-navy-soft">
                     {c.expertise.clientsIntro}
                   </p>
-                  <p className="mt-2 text-[13.5px] leading-relaxed text-white">{c.expertise.clientsList}</p>
+                  <div className="mt-3 space-y-3">
+                    <div>
+                      <dt className="text-[12px] font-semibold text-bronze-soft">{c.expertise.clientsFranceLabel}</dt>
+                      <dd className="mt-0.5 text-[13.5px] leading-relaxed text-white">
+                        {c.expertise.clientsFranceList}
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="text-[12px] font-semibold text-bronze-soft">{c.expertise.clientsSuisseLabel}</dt>
+                      <dd className="mt-0.5 text-[13.5px] leading-relaxed text-white">
+                        {c.expertise.clientsSuisseList}
+                      </dd>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

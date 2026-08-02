@@ -63,7 +63,10 @@ export type PageContent = {
     pharmaIntro: string;
     pharmaList: string;
     clientsIntro: string;
-    clientsList: string;
+    clientsFranceLabel: string;
+    clientsFranceList: string;
+    clientsSuisseLabel: string;
+    clientsSuisseList: string;
     certDoneTitle: string;
     certDoneItems: string[];
     certRoadmapTitle: string;
@@ -479,7 +482,10 @@ export const content: Record<Locale, PageContent> = {
       pharmaIntro: "Ce que le secteur pharmaceutique impose, par nature :",
       pharmaList: "Qualité · Traçabilité · Reproductibilité · Technologie de pointe · Productivité · Planification · Amélioration continue",
       clientsIntro: "Structures accompagnées en tant que consultant, notamment :",
-      clientsList: "Sanofi · Becton Dickinson · Curium Pharma · Ferring · Alispharm · Altogen · Techfirm Industrial",
+      clientsFranceLabel: "France",
+      clientsFranceList: "Sanofi · Becton Dickinson · Curium Pharma · Alispharm",
+      clientsSuisseLabel: "Suisse",
+      clientsSuisseList: "Ferring · Altogen · Techfirm Industrial",
       certDoneTitle: "Certifications acquises",
       certDoneItems: ["Certification Lean Management", "Analyse de données & Power BI", "Pratique des environnements réglementés (CQV/CSV)"],
       certRoadmapTitle: "Feuille de route",
@@ -614,7 +620,10 @@ export const content: Record<Locale, PageContent> = {
       pharmaIntro: "What the pharmaceutical industry demands, by nature:",
       pharmaList: "Quality · Traceability · Reproducibility · Cutting-edge technology · Productivity · Planning · Continuous improvement",
       clientsIntro: "Organisations worked with as a consultant, among others:",
-      clientsList: "Sanofi · Becton Dickinson · Curium Pharma · Ferring · Alispharm · Altogen · Techfirm Industrial",
+      clientsFranceLabel: "France",
+      clientsFranceList: "Sanofi · Becton Dickinson · Curium Pharma · Alispharm",
+      clientsSuisseLabel: "Switzerland",
+      clientsSuisseList: "Ferring · Altogen · Techfirm Industrial",
       certDoneTitle: "Credentials held",
       certDoneItems: ["Lean Management certification", "Data analysis & Power BI", "Practical experience in regulated environments (CQV/CSV)"],
       certRoadmapTitle: "Development roadmap",
