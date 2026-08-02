@@ -317,7 +317,7 @@ function Home() {
             <div className="reveal mt-9 max-w-[95ch] divide-y divide-line border-y border-line">
               {c.faq.items.map((item) => (
                 <details key={item.q} className="group py-5">
-                  <summary className="flex cursor-pointer list-none items-start justify-between gap-6 font-display text-[16.5px] font-bold text-navy">
+                  <summary className="flex cursor-pointer list-none items-start justify-between gap-6 font-display text-[16.5px] font-bold text-navy transition-colors hover:text-teal">
                     {item.q}
                     <span
                       aria-hidden="true"

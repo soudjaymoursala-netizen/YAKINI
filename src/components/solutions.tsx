@@ -11,7 +11,7 @@ export function SolutionCard({
 }) {
   return (
     <details className="surface group overflow-hidden">
-      <summary className="flex cursor-pointer list-none items-baseline gap-4 px-5 py-5 sm:px-7">
+      <summary className="flex cursor-pointer list-none items-baseline gap-4 px-5 py-5 transition-colors hover:bg-cream-alt sm:px-7">
         <span
           className={`font-display text-sm font-bold ${solution.premium ? "text-teal" : "text-bronze"}`}
         >
