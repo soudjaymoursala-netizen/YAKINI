@@ -43,6 +43,7 @@ export type PageContent = {
   difference: {
     eyebrow: string;
     h2: string;
+    p: string;
     items: { t: string; d: string }[];
     closing: string;
   };
@@ -456,6 +457,7 @@ export const content: Record<Locale, PageContent> = {
     difference: {
       eyebrow: "Pourquoi nous",
       h2: "Notre discipline : refuser une mission plutôt que vendre au-delà du nécessaire.",
+      p: "C'est ce qui distingue un conseiller de confiance d'un simple prestataire.",
       items: [
         { t: "L'écoute des équipes opérationnelles", d: "Une solution conçue sans ses utilisateurs finaux est, par construction, vouée à l'abandon. Nous les rencontrons hors présence hiérarchique et confrontons leur expérience à la vision de la direction." },
         { t: "L'arbitrage sans conflit d'intérêt", d: "Lorsqu'un enjeu relève de l'organisation plutôt que de la technologie, nous le signalons explicitement — y compris lorsqu'une solution logicielle serait commercialement plus favorable pour nous." },
@@ -594,6 +596,7 @@ export const content: Record<Locale, PageContent> = {
     difference: {
       eyebrow: "Why us",
       h2: "Our discipline: declining an engagement rather than overselling.",
+      p: "It's what separates a trusted advisor from just another vendor.",
       items: [
         { t: "Engagement with operational teams", d: "A solution designed without its end users is, by construction, destined for abandonment. We meet them away from the hierarchy and set their experience against leadership's perspective." },
         { t: "Arbitration free of conflict of interest", d: "Where an issue is organisational rather than technological in nature, we state it explicitly — including where a software solution would be commercially more favourable to us." },

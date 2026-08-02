@@ -212,6 +212,7 @@ function Home() {
             <div className="reveal">
               <span className="eyebrow">{c.difference.eyebrow}</span>
               <h2 className="mt-3 text-[clamp(28px,3.8vw,44px)] tracking-[-0.015em] text-navy">{c.difference.h2}</h2>
+              <p className="mt-4 text-[16px] text-ink-soft">{c.difference.p}</p>
             </div>
 
             <div className="reveal mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
