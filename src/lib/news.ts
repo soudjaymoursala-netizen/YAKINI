@@ -9,13 +9,28 @@ export type NewsArticle = {
   body: string[];
 };
 
+export type CuratedNews = {
+  id: string;
+  date: string;
+  category: string;
+  title: string;
+  summary: string;
+  sourceName: string;
+  sourceUrl: string;
+};
+
 export type NewsContent = {
   meta: { title: string; description: string };
   eyebrow: string;
   h1: string;
   intro: string;
   backHome: string;
+  analysesTitle: string;
   articles: NewsArticle[];
+  curatedTitle: string;
+  curatedIntro: string;
+  readFullArticle: string;
+  curated: CuratedNews[];
 };
 
 export const newsContent: Record<Locale, NewsContent> = {
@@ -30,6 +45,45 @@ export const newsContent: Record<Locale, NewsContent> = {
     intro:
       "Pas de veille technologique générique : des prises de position sur ce qui, dans notre pratique quotidienne du conseil, de l'audit et de la transformation digitale, mérite d'être discuté.",
     backHome: "Retour à l'accueil",
+    analysesTitle: "Nos analyses",
+    curatedTitle: "Actualité du secteur",
+    curatedIntro:
+      "Une sélection commentée, pas une revue de presse exhaustive — ce qui, dans l'actualité récente, touche directement à ce que nous faisons.",
+    readFullArticle: "Lire l'article complet",
+    curated: [
+      {
+        id: "ai-act-application",
+        date: "2026-08-02",
+        category: "Réglementation",
+        title: "L'AI Act européen entre en application complète : ce que ça change pour la gouvernance",
+        summary:
+          "Depuis le 2 août 2026, le règlement européen sur l'intelligence artificielle s'applique pleinement dans les 27 États membres : obligations de transparence et régime de sanctions deviennent effectifs, tandis que le volet consacré aux systèmes à haut risque reste à venir. Pour toute organisation qui utilise l'IA — y compris hors Union européenne, dès qu'elle travaille avec des partenaires européens — la question centrale n'est plus de savoir si l'on peut utiliser l'IA, mais si l'on peut prouver comment on l'utilise : quelles données, quelles décisions, sous quelle supervision.",
+        sourceName: "Solutions Numériques & Cybersécurité",
+        sourceUrl:
+          "https://www.solutions-numeriques.com/avis-juridique-2-aout-2026-les-dirigeants-deviennent-comptables-de-lintelligence-artificielle/",
+      },
+      {
+        id: "iso-9001-2026",
+        date: "2026-07-10",
+        category: "Normes",
+        title: "ISO 9001:2026 : la première révision complète de la norme depuis 2015 se prépare",
+        summary:
+          "L'ISO prépare la première révision complète de la norme ISO 9001 depuis 2015, avec une publication attendue à l'automne 2026 et une période de transition de plusieurs années pour les organisations déjà certifiées. La structure générale — approche processus, logique PDCA — reste inchangée, mais la révision intègre plus explicitement la gestion des données numériques, la cybersécurité, la durabilité et la maîtrise des processus externalisés : des sujets que la version 2015 laissait largement implicites.",
+        sourceName: "Bureau Veritas France",
+        sourceUrl:
+          "https://www.bureauveritas.fr/newsroom/iso-90012026-tout-savoir-sur-la-revision-de-la-norme-qualite-et-sa-transition",
+      },
+      {
+        id: "transformation-numerique-afrique",
+        date: "2026-01-15",
+        category: "Contexte régional",
+        title: "Transformation numérique en Afrique : la connectivité reste l'obstacle, le pragmatisme la réponse",
+        summary:
+          "Les objectifs continentaux sont ambitieux — connectivité universelle d'ici 2030, engagement réaffirmé lors du sommet régional de Cotonou fin 2025 — mais la réalité du terrain reste contrastée : les centres urbains avancent vite, les zones rurales composent encore avec une alimentation électrique instable et un coût de la donnée élevé. Plusieurs analyses récentes convergent sur un point : ce qui définit la transformation numérique africaine en 2026 n'est pas la course aux dernières technologies, mais un pragmatisme assumé — résoudre des problèmes concrets avec les moyens réellement disponibles. Une lecture qui rejoint directement notre propre méthode.",
+        sourceName: "Qualisys Consulting",
+        sourceUrl: "https://qualisysconsulting.com/blog/publications-fr-6/transformation-digitale-en-afrique-en-2026-51",
+      },
+    ],
     articles: [
       {
         id: "audit-terrain-vs-ia",
@@ -86,6 +140,45 @@ export const newsContent: Record<Locale, NewsContent> = {
     intro:
       "Not generic technology watch: positions on what, in our daily practice of consulting, audit and digital transformation, is worth discussing.",
     backHome: "Back to home",
+    analysesTitle: "Our analysis",
+    curatedTitle: "Industry news",
+    curatedIntro:
+      "A curated, commented selection — not an exhaustive press review — of what, in recent news, directly touches what we do.",
+    readFullArticle: "Read the full article",
+    curated: [
+      {
+        id: "ai-act-application",
+        date: "2026-08-02",
+        category: "Regulation",
+        title: "The EU AI Act enters full application: what it changes for governance",
+        summary:
+          "As of 2 August 2026, the European Union's AI regulation applies in full across all 27 member states: transparency obligations and the sanctions regime become effective, while the section covering high-risk systems is still to come. For any organisation using AI — including outside the EU, as soon as it works with European partners — the central question is no longer whether AI can be used, but whether one can prove how it is used: what data, what decisions, under what supervision.",
+        sourceName: "Solutions Numériques & Cybersécurité",
+        sourceUrl:
+          "https://www.solutions-numeriques.com/avis-juridique-2-aout-2026-les-dirigeants-deviennent-comptables-de-lintelligence-artificielle/",
+      },
+      {
+        id: "iso-9001-2026",
+        date: "2026-07-10",
+        category: "Standards",
+        title: "ISO 9001:2026: the standard's first full revision since 2015 is taking shape",
+        summary:
+          "ISO is preparing the first full revision of the ISO 9001 standard since 2015, with publication expected in autumn 2026 and a multi-year transition period for already-certified organisations. The overall structure — process approach, PDCA logic — remains unchanged, but the revision more explicitly addresses digital data management, cybersecurity, sustainability, and control of outsourced processes: topics the 2015 version left largely implicit.",
+        sourceName: "Bureau Veritas France",
+        sourceUrl:
+          "https://www.bureauveritas.fr/newsroom/iso-90012026-tout-savoir-sur-la-revision-de-la-norme-qualite-et-sa-transition",
+      },
+      {
+        id: "transformation-numerique-afrique",
+        date: "2026-01-15",
+        category: "Regional context",
+        title: "Digital transformation in Africa: connectivity remains the obstacle, pragmatism the answer",
+        summary:
+          "Continental ambitions are high — universal connectivity by 2030, reaffirmed at the regional Cotonou summit in late 2025 — but the reality on the ground stays uneven: urban centres move fast, while rural areas still contend with unstable power supply and high data costs. Several recent analyses converge on one point: what defines Africa's digital transformation in 2026 isn't a race for the latest technology, but a deliberate pragmatism — solving concrete problems with the means genuinely available. A reading that lines up directly with our own method.",
+        sourceName: "Qualisys Consulting",
+        sourceUrl: "https://qualisysconsulting.com/blog/publications-fr-6/transformation-digitale-en-afrique-en-2026-51",
+      },
+    ],
     articles: [
       {
         id: "audit-terrain-vs-ia",

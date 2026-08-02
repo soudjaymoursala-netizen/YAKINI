@@ -64,7 +64,10 @@ function NewsPage() {
       </section>
 
       <section className="bg-cream py-20 sm:py-24">
-        <div className="wrap max-w-[80ch] space-y-5">
+        <div className="wrap max-w-[80ch]">
+          <span className="eyebrow">{n.analysesTitle}</span>
+        </div>
+        <div className="wrap mt-6 max-w-[80ch] space-y-5">
           {n.articles.map((article) => (
             <details key={article.id} className="surface group overflow-hidden">
               <summary className="flex cursor-pointer list-none flex-col gap-2 px-6 py-6 transition-colors hover:bg-cream-alt sm:px-8 sm:py-7">
@@ -95,6 +98,37 @@ function NewsPage() {
                 ))}
               </div>
             </details>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-cream-alt py-20 sm:py-24">
+        <div className="wrap max-w-[80ch]">
+          <span className="eyebrow">{n.curatedTitle}</span>
+          <p className="mt-3 text-[15px] text-ink-soft">{n.curatedIntro}</p>
+        </div>
+        <div className="wrap mt-8 max-w-[80ch] space-y-5">
+          {n.curated.map((item) => (
+            <article key={item.id} className="surface p-6 sm:p-8">
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="rounded-full border border-line bg-cream px-3 py-1 text-[11.5px] font-semibold uppercase tracking-[0.04em] text-teal">
+                  {item.category}
+                </span>
+                <span className="text-[13px] text-ink-soft">{formatDate(item.date, lang)}</span>
+              </div>
+              <h3 className="mt-3 font-display text-[18px] font-bold leading-snug text-navy sm:text-[20px]">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-[14.5px] leading-relaxed text-ink-soft">{item.summary}</p>
+              <a
+                href={item.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-teal transition-colors hover:text-navy"
+              >
+                {n.readFullArticle} — {item.sourceName} ↗
+              </a>
+            </article>
           ))}
         </div>
 
