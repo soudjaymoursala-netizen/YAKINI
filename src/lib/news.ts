@@ -12,7 +12,7 @@ export type NewsArticle = {
 export type CuratedNews = {
   id: string;
   date: string;
-  category: string;
+  categories: string[];
   title: string;
   summary: string;
   sourceName: string;
@@ -30,8 +30,13 @@ export type NewsContent = {
   curatedTitle: string;
   curatedIntro: string;
   readFullArticle: string;
+  filterAll: string;
+  filters: string[];
   curated: CuratedNews[];
 };
+
+const FILTERS_FR = ["IA", "Technologie", "International", "Comores", "Économie", "Statistiques", "Sociétés comoriennes"];
+const FILTERS_EN = ["AI", "Technology", "International", "Comoros", "Economy", "Statistics", "Comorian companies"];
 
 export const newsContent: Record<Locale, NewsContent> = {
   fr: {
@@ -50,11 +55,13 @@ export const newsContent: Record<Locale, NewsContent> = {
     curatedIntro:
       "Une sélection commentée, pas une revue de presse exhaustive — ce qui, dans l'actualité récente, touche directement à ce que nous faisons.",
     readFullArticle: "Lire l'article complet",
+    filterAll: "Tout",
+    filters: FILTERS_FR,
     curated: [
       {
         id: "ai-act-application",
         date: "2026-08-02",
-        category: "Réglementation",
+        categories: ["IA", "International"],
         title: "L'AI Act européen entre en application complète : ce que ça change pour la gouvernance",
         summary:
           "Depuis le 2 août 2026, le règlement européen sur l'intelligence artificielle s'applique pleinement dans les 27 États membres : obligations de transparence et régime de sanctions deviennent effectifs, tandis que le volet consacré aux systèmes à haut risque reste à venir. Pour toute organisation qui utilise l'IA — y compris hors Union européenne, dès qu'elle travaille avec des partenaires européens — la question centrale n'est plus de savoir si l'on peut utiliser l'IA, mais si l'on peut prouver comment on l'utilise : quelles données, quelles décisions, sous quelle supervision.",
@@ -65,7 +72,7 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "iso-9001-2026",
         date: "2026-07-10",
-        category: "Normes",
+        categories: ["International"],
         title: "ISO 9001:2026 : la première révision complète de la norme depuis 2015 se prépare",
         summary:
           "L'ISO prépare la première révision complète de la norme ISO 9001 depuis 2015, avec une publication attendue à l'automne 2026 et une période de transition de plusieurs années pour les organisations déjà certifiées. La structure générale — approche processus, logique PDCA — reste inchangée, mais la révision intègre plus explicitement la gestion des données numériques, la cybersécurité, la durabilité et la maîtrise des processus externalisés : des sujets que la version 2015 laissait largement implicites.",
@@ -76,7 +83,7 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "transformation-numerique-afrique",
         date: "2026-01-15",
-        category: "Contexte régional",
+        categories: ["Technologie", "International"],
         title: "Transformation numérique en Afrique : la connectivité reste l'obstacle, le pragmatisme la réponse",
         summary:
           "Les objectifs continentaux sont ambitieux — connectivité universelle d'ici 2030, engagement réaffirmé lors du sommet régional de Cotonou fin 2025 — mais la réalité du terrain reste contrastée : les centres urbains avancent vite, les zones rurales composent encore avec une alimentation électrique instable et un coût de la donnée élevé. Plusieurs analyses récentes convergent sur un point : ce qui définit la transformation numérique africaine en 2026 n'est pas la course aux dernières technologies, mais un pragmatisme assumé — résoudre des problèmes concrets avec les moyens réellement disponibles. Une lecture qui rejoint directement notre propre méthode.",
@@ -86,7 +93,7 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "comores-forum-ia",
         date: "2026-04-01",
-        category: "Technologie · Comores",
+        categories: ["IA", "Technologie", "Comores"],
         title: "Les Comores organisent leur premier forum sur l'intelligence artificielle",
         summary:
           "Début avril 2026, les Comores ont accueilli la première édition d'un forum consacré à l'intelligence artificielle, organisé par Zynbusiness avec le soutien du ministère des Postes, des Télécommunications et de l'Économie numérique. L'événement a réuni décideurs publics, experts technologiques et entrepreneurs autour des défis et opportunités liés à l'intégration de l'IA dans le pays — une première étape officielle pour positionner l'archipel dans la transition numérique régionale.",
@@ -96,7 +103,7 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "comores-padec-bad",
         date: "2024-09-07",
-        category: "Gouvernement · Comores",
+        categories: ["Comores", "Économie"],
         title: "Un nouveau financement de la Banque africaine de développement pour la digitalisation comorienne",
         summary:
           "Le gouvernement comorien bénéficie d'un nouveau soutien financier de la Banque africaine de développement, via le Fonds africain de développement et la Facilité d'appui à la transition, pour poursuivre le Projet d'appui à la digitalisation de l'économie comorienne (PADEC). Depuis 2018, le numérique figure parmi les priorités affichées de l'exécutif comorien — ce financement doit permettre de concrétiser une partie des chantiers de modernisation encore en attente de moyens.",
@@ -107,7 +114,7 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "comores-contestation-hydrocarbures",
         date: "2026-05-09",
-        category: "Contexte économique · Comores",
+        categories: ["Comores", "Économie"],
         title: "Contestation sociale autour de la révision des prix des hydrocarbures",
         summary:
           "Depuis le 9 mai 2026, l'archipel comorien connaît un mouvement de contestation contre la révision tarifaire des hydrocarbures décidée par les autorités, avec des répercussions sur les transports et le commerce dans les trois îles. La hausse du carburant pèse en particulier sur une population déjà affectée par l'inflation. Pour toute organisation opérant aux Comores, cet épisode rappelle combien les coûts logistiques et opérationnels peuvent évoluer rapidement — un facteur à intégrer dans toute planification, comme dans n'importe quel contexte insulaire dépendant des importations.",
@@ -117,12 +124,22 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "comores-croissance-banque-mondiale",
         date: "2025-12-12",
-        category: "Économie · Comores",
+        categories: ["Comores", "Économie", "Statistiques"],
         title: "Croissance et recul de la pauvreté : ce que dit la Banque mondiale sur l'économie comorienne",
         summary:
           "Selon les données de la Banque mondiale, l'économie comorienne a gagné en dynamisme en 2025, avec une croissance du PIB réel estimée à 3,8%, portée notamment par le secteur industriel. Le taux de pauvreté a reculé de 25,9% de la population en 2020 à 18% en 2024. Les défis structurels restent réels — isolement géographique, marché intérieur restreint, capacités institutionnelles limitées — mais la tendance de fond, notamment portée par les transferts de la diaspora, va dans le bon sens.",
         sourceName: "Groupe de la Banque mondiale",
         sourceUrl: "https://www.banquemondiale.org/ext/fr/country/comoros",
+      },
+      {
+        id: "comores-telecom-20-ans",
+        date: "2025-06-02",
+        categories: ["Comores", "Sociétés comoriennes"],
+        title: "Comores Telecom fête ses 20 ans et structure son plan quinquennal 2024-2029",
+        summary:
+          "Le 2 juin 2025, Comores Telecom — l'opérateur historique de télécommunications de l'archipel — a célébré ses 20 ans d'existence. Quelques mois plus tard, un nouveau directeur général a pris ses fonctions, avant que la société n'organise, fin décembre 2025, un atelier dédié à son plan de travail annuel 2026, dans la continuité d'un plan quinquennal 2024-2029 engagé plus tôt. Une trajectoire qui illustre comment les grandes structures comoriennes — publiques ou historiques — structurent aujourd'hui leur propre transformation, avec les mêmes enjeux de gouvernance et de planification que ceux que nous rencontrons chez nos clients.",
+        sourceName: "Comores Telecom",
+        sourceUrl: "https://www.comorestelecom.km/",
       },
     ],
     articles: [
@@ -186,11 +203,13 @@ export const newsContent: Record<Locale, NewsContent> = {
     curatedIntro:
       "A curated, commented selection — not an exhaustive press review — of what, in recent news, directly touches what we do.",
     readFullArticle: "Read the full article",
+    filterAll: "All",
+    filters: FILTERS_EN,
     curated: [
       {
         id: "ai-act-application",
         date: "2026-08-02",
-        category: "Regulation",
+        categories: ["AI", "International"],
         title: "The EU AI Act enters full application: what it changes for governance",
         summary:
           "As of 2 August 2026, the European Union's AI regulation applies in full across all 27 member states: transparency obligations and the sanctions regime become effective, while the section covering high-risk systems is still to come. For any organisation using AI — including outside the EU, as soon as it works with European partners — the central question is no longer whether AI can be used, but whether one can prove how it is used: what data, what decisions, under what supervision.",
@@ -201,7 +220,7 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "iso-9001-2026",
         date: "2026-07-10",
-        category: "Standards",
+        categories: ["International"],
         title: "ISO 9001:2026: the standard's first full revision since 2015 is taking shape",
         summary:
           "ISO is preparing the first full revision of the ISO 9001 standard since 2015, with publication expected in autumn 2026 and a multi-year transition period for already-certified organisations. The overall structure — process approach, PDCA logic — remains unchanged, but the revision more explicitly addresses digital data management, cybersecurity, sustainability, and control of outsourced processes: topics the 2015 version left largely implicit.",
@@ -212,7 +231,7 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "transformation-numerique-afrique",
         date: "2026-01-15",
-        category: "Regional context",
+        categories: ["Technology", "International"],
         title: "Digital transformation in Africa: connectivity remains the obstacle, pragmatism the answer",
         summary:
           "Continental ambitions are high — universal connectivity by 2030, reaffirmed at the regional Cotonou summit in late 2025 — but the reality on the ground stays uneven: urban centres move fast, while rural areas still contend with unstable power supply and high data costs. Several recent analyses converge on one point: what defines Africa's digital transformation in 2026 isn't a race for the latest technology, but a deliberate pragmatism — solving concrete problems with the means genuinely available. A reading that lines up directly with our own method.",
@@ -222,7 +241,7 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "comores-forum-ia",
         date: "2026-04-01",
-        category: "Technology · Comoros",
+        categories: ["AI", "Technology", "Comoros"],
         title: "The Comoros hold their first artificial intelligence forum",
         summary:
           "In early April 2026, the Comoros hosted the first edition of a forum dedicated to artificial intelligence, organised by Zynbusiness with support from the Ministry of Posts, Telecommunications and the Digital Economy. The event brought together public decision-makers, technology experts and entrepreneurs to discuss the challenges and opportunities of integrating AI into the country — an official first step toward positioning the archipelago within the regional digital transition.",
@@ -232,7 +251,7 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "comores-padec-bad",
         date: "2024-09-07",
-        category: "Government · Comoros",
+        categories: ["Comoros", "Economy"],
         title: "New African Development Bank financing for Comorian digitalisation",
         summary:
           "The Comorian government has secured new financial support from the African Development Bank, via the African Development Fund and the Transition Support Facility, to continue the Project to Support the Digitalisation of the Comorian Economy (PADEC). Since 2018, digital transformation has featured among the executive's stated priorities — this financing should help move forward modernisation projects still awaiting the necessary resources.",
@@ -243,7 +262,7 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "comores-contestation-hydrocarbures",
         date: "2026-05-09",
-        category: "Economic context · Comoros",
+        categories: ["Comoros", "Economy"],
         title: "Social unrest over the revision of fuel prices",
         summary:
           "Since 9 May 2026, the Comorian archipelago has seen a protest movement against the authorities' revision of fuel prices, disrupting transport and trade across the three islands. The rise in fuel costs weighs particularly heavily on a population already affected by inflation. For any organisation operating in the Comoros, this episode is a reminder of how quickly logistical and operating costs can shift — a factor worth building into planning, as in any island context dependent on imports.",
@@ -253,12 +272,22 @@ export const newsContent: Record<Locale, NewsContent> = {
       {
         id: "comores-croissance-banque-mondiale",
         date: "2025-12-12",
-        category: "Economy · Comoros",
+        categories: ["Comoros", "Economy", "Statistics"],
         title: "Growth and falling poverty: what the World Bank says about the Comorian economy",
         summary:
           "According to World Bank data, the Comorian economy gained momentum in 2025, with real GDP growth estimated at 3.8%, driven notably by the industrial sector. The poverty rate fell from 25.9% of the population in 2020 to 18% in 2024. Structural challenges remain real — geographic isolation, a narrow domestic market, limited institutional capacity — but the underlying trend, supported in particular by diaspora remittances, is a positive one.",
         sourceName: "World Bank Group",
         sourceUrl: "https://www.banquemondiale.org/ext/fr/country/comoros",
+      },
+      {
+        id: "comores-telecom-20-ans",
+        date: "2025-06-02",
+        categories: ["Comoros", "Comorian companies"],
+        title: "Comores Telecom turns 20 and structures its 2024-2029 five-year plan",
+        summary:
+          "On 2 June 2025, Comores Telecom — the archipelago's historic telecommunications operator — celebrated its 20th anniversary. A few months later, a new CEO took office, before the company held a workshop, in late December 2025, dedicated to its 2026 annual work plan, in keeping with an earlier 2024-2029 five-year plan. A trajectory that illustrates how the Comoros' major organisations — public or historic — are now structuring their own transformation, facing the same governance and planning challenges we encounter with our own clients.",
+        sourceName: "Comores Telecom",
+        sourceUrl: "https://www.comorestelecom.km/",
       },
     ],
     articles: [

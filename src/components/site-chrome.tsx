@@ -58,44 +58,46 @@ export function SiteNav({
           </span>
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
-          {nav.links.map((link) => {
-            const isActive = activeSection === link.href.replace("#", "");
-            return (
-              <a
-                key={link.href}
-                href={linkHref(link.href)}
-                aria-current={isActive ? "true" : undefined}
-                className={`border-b-2 pb-0.5 text-sm font-medium transition-colors ${
-                  isActive
-                    ? "border-teal text-navy"
-                    : "border-transparent text-ink-soft hover:text-ink"
-                }`}
-              >
-                {link.label}
-              </a>
-            );
-          })}
-          <a
-            href={`/${lang}/news`}
-            className="border-b-2 border-transparent pb-0.5 text-sm font-medium text-ink-soft transition-colors hover:text-ink"
-          >
-            {nav.newsLabel}
-          </a>
-        </nav>
+        <div className="hidden items-center gap-10 md:flex">
+          <nav className="flex items-center gap-8">
+            {nav.links.map((link) => {
+              const isActive = activeSection === link.href.replace("#", "");
+              return (
+                <a
+                  key={link.href}
+                  href={linkHref(link.href)}
+                  aria-current={isActive ? "true" : undefined}
+                  className={`border-b-2 pb-0.5 text-sm font-medium transition-colors ${
+                    isActive
+                      ? "border-teal text-navy"
+                      : "border-transparent text-ink-soft hover:text-ink"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
+            <a
+              href={`/${lang}/news`}
+              className="border-b-2 border-transparent pb-0.5 text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+            >
+              {nav.newsLabel}
+            </a>
+          </nav>
 
-        <div className="hidden items-center gap-4 md:flex">
-          <a
-            href={`/${otherLang}`}
-            hrefLang={otherLang}
-            aria-label={otherLang === "en" ? "Switch to English" : "Passer en français"}
-            className="rounded px-2 py-2 text-sm font-semibold text-ink-soft transition-colors hover:text-navy"
-          >
-            {nav.langLabel}
-          </a>
-          <a href={contactHref} className="btn btn-navy">
-            {nav.contact}
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href={`/${otherLang}`}
+              hrefLang={otherLang}
+              aria-label={otherLang === "en" ? "Switch to English" : "Passer en français"}
+              className="rounded px-2 py-2 text-sm font-semibold text-ink-soft transition-colors hover:text-navy"
+            >
+              {nav.langLabel}
+            </a>
+            <a href={contactHref} className="btn btn-navy">
+              {nav.contact}
+            </a>
+          </div>
         </div>
 
         <button
