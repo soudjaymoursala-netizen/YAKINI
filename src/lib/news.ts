@@ -83,6 +83,47 @@ export const newsContent: Record<Locale, NewsContent> = {
         sourceName: "Qualisys Consulting",
         sourceUrl: "https://qualisysconsulting.com/blog/publications-fr-6/transformation-digitale-en-afrique-en-2026-51",
       },
+      {
+        id: "comores-forum-ia",
+        date: "2026-04-01",
+        category: "Technologie · Comores",
+        title: "Les Comores organisent leur premier forum sur l'intelligence artificielle",
+        summary:
+          "Début avril 2026, les Comores ont accueilli la première édition d'un forum consacré à l'intelligence artificielle, organisé par Zynbusiness avec le soutien du ministère des Postes, des Télécommunications et de l'Économie numérique. L'événement a réuni décideurs publics, experts technologiques et entrepreneurs autour des défis et opportunités liés à l'intégration de l'IA dans le pays — une première étape officielle pour positionner l'archipel dans la transition numérique régionale.",
+        sourceName: "Al-Fajr Quotidien",
+        sourceUrl: "https://www.al-fajrquotidien.com/technologie-numerique-les-comores-explorent-lintelligence-artificielle/",
+      },
+      {
+        id: "comores-padec-bad",
+        date: "2024-09-07",
+        category: "Gouvernement · Comores",
+        title: "Un nouveau financement de la Banque africaine de développement pour la digitalisation comorienne",
+        summary:
+          "Le gouvernement comorien bénéficie d'un nouveau soutien financier de la Banque africaine de développement, via le Fonds africain de développement et la Facilité d'appui à la transition, pour poursuivre le Projet d'appui à la digitalisation de l'économie comorienne (PADEC). Depuis 2018, le numérique figure parmi les priorités affichées de l'exécutif comorien — ce financement doit permettre de concrétiser une partie des chantiers de modernisation encore en attente de moyens.",
+        sourceName: "We Are Tech Africa",
+        sourceUrl:
+          "https://www.wearetech.africa/fr/fils/tech-stars/numerique-les-comores-font-un-pas-de-plus-vers-un-financement-de-la-bad",
+      },
+      {
+        id: "comores-contestation-hydrocarbures",
+        date: "2026-05-09",
+        category: "Contexte économique · Comores",
+        title: "Contestation sociale autour de la révision des prix des hydrocarbures",
+        summary:
+          "Depuis le 9 mai 2026, l'archipel comorien connaît un mouvement de contestation contre la révision tarifaire des hydrocarbures décidée par les autorités, avec des répercussions sur les transports et le commerce dans les trois îles. La hausse du carburant pèse en particulier sur une population déjà affectée par l'inflation. Pour toute organisation opérant aux Comores, cet épisode rappelle combien les coûts logistiques et opérationnels peuvent évoluer rapidement — un facteur à intégrer dans toute planification, comme dans n'importe quel contexte insulaire dépendant des importations.",
+        sourceName: "L'Info — Océan Indien",
+        sourceUrl: "https://www.linfo.re/ocean-indien/les-comores",
+      },
+      {
+        id: "comores-croissance-banque-mondiale",
+        date: "2025-12-12",
+        category: "Économie · Comores",
+        title: "Croissance et recul de la pauvreté : ce que dit la Banque mondiale sur l'économie comorienne",
+        summary:
+          "Selon les données de la Banque mondiale, l'économie comorienne a gagné en dynamisme en 2025, avec une croissance du PIB réel estimée à 3,8%, portée notamment par le secteur industriel. Le taux de pauvreté a reculé de 25,9% de la population en 2020 à 18% en 2024. Les défis structurels restent réels — isolement géographique, marché intérieur restreint, capacités institutionnelles limitées — mais la tendance de fond, notamment portée par les transferts de la diaspora, va dans le bon sens.",
+        sourceName: "Groupe de la Banque mondiale",
+        sourceUrl: "https://www.banquemondiale.org/ext/fr/country/comoros",
+      },
     ],
     articles: [
       {
@@ -177,6 +218,47 @@ export const newsContent: Record<Locale, NewsContent> = {
           "Continental ambitions are high — universal connectivity by 2030, reaffirmed at the regional Cotonou summit in late 2025 — but the reality on the ground stays uneven: urban centres move fast, while rural areas still contend with unstable power supply and high data costs. Several recent analyses converge on one point: what defines Africa's digital transformation in 2026 isn't a race for the latest technology, but a deliberate pragmatism — solving concrete problems with the means genuinely available. A reading that lines up directly with our own method.",
         sourceName: "Qualisys Consulting",
         sourceUrl: "https://qualisysconsulting.com/blog/publications-fr-6/transformation-digitale-en-afrique-en-2026-51",
+      },
+      {
+        id: "comores-forum-ia",
+        date: "2026-04-01",
+        category: "Technology · Comoros",
+        title: "The Comoros hold their first artificial intelligence forum",
+        summary:
+          "In early April 2026, the Comoros hosted the first edition of a forum dedicated to artificial intelligence, organised by Zynbusiness with support from the Ministry of Posts, Telecommunications and the Digital Economy. The event brought together public decision-makers, technology experts and entrepreneurs to discuss the challenges and opportunities of integrating AI into the country — an official first step toward positioning the archipelago within the regional digital transition.",
+        sourceName: "Al-Fajr Quotidien",
+        sourceUrl: "https://www.al-fajrquotidien.com/technologie-numerique-les-comores-explorent-lintelligence-artificielle/",
+      },
+      {
+        id: "comores-padec-bad",
+        date: "2024-09-07",
+        category: "Government · Comoros",
+        title: "New African Development Bank financing for Comorian digitalisation",
+        summary:
+          "The Comorian government has secured new financial support from the African Development Bank, via the African Development Fund and the Transition Support Facility, to continue the Project to Support the Digitalisation of the Comorian Economy (PADEC). Since 2018, digital transformation has featured among the executive's stated priorities — this financing should help move forward modernisation projects still awaiting the necessary resources.",
+        sourceName: "We Are Tech Africa",
+        sourceUrl:
+          "https://www.wearetech.africa/fr/fils/tech-stars/numerique-les-comores-font-un-pas-de-plus-vers-un-financement-de-la-bad",
+      },
+      {
+        id: "comores-contestation-hydrocarbures",
+        date: "2026-05-09",
+        category: "Economic context · Comoros",
+        title: "Social unrest over the revision of fuel prices",
+        summary:
+          "Since 9 May 2026, the Comorian archipelago has seen a protest movement against the authorities' revision of fuel prices, disrupting transport and trade across the three islands. The rise in fuel costs weighs particularly heavily on a population already affected by inflation. For any organisation operating in the Comoros, this episode is a reminder of how quickly logistical and operating costs can shift — a factor worth building into planning, as in any island context dependent on imports.",
+        sourceName: "L'Info — Indian Ocean",
+        sourceUrl: "https://www.linfo.re/ocean-indien/les-comores",
+      },
+      {
+        id: "comores-croissance-banque-mondiale",
+        date: "2025-12-12",
+        category: "Economy · Comoros",
+        title: "Growth and falling poverty: what the World Bank says about the Comorian economy",
+        summary:
+          "According to World Bank data, the Comorian economy gained momentum in 2025, with real GDP growth estimated at 3.8%, driven notably by the industrial sector. The poverty rate fell from 25.9% of the population in 2020 to 18% in 2024. Structural challenges remain real — geographic isolation, a narrow domestic market, limited institutional capacity — but the underlying trend, supported in particular by diaspora remittances, is a positive one.",
+        sourceName: "World Bank Group",
+        sourceUrl: "https://www.banquemondiale.org/ext/fr/country/comoros",
       },
     ],
     articles: [
